@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/creativetimofficial/argon-design-system/blob/master/LICENSE.md/static/js/main.e43310d5.chunk.js",
+    "main.js.map": "/creativetimofficial/argon-design-system/blob/master/LICENSE.md/static/js/main.e43310d5.chunk.js.map",
+    "runtime-main.js": "/creativetimofficial/argon-design-system/blob/master/LICENSE.md/static/js/runtime-main.2d4bd73a.js",
+    "runtime-main.js.map": "/creativetimofficial/argon-design-system/blob/master/LICENSE.md/static/js/runtime-main.2d4bd73a.js.map",
+    "index.html": "/creativetimofficial/argon-design-system/blob/master/LICENSE.md/index.html",
+    "precache-manifest.0b119d588d4c30f9a252aca9d131b909.js": "/creativetimofficial/argon-design-system/blob/master/LICENSE.md/precache-manifest.0b119d588d4c30f9a252aca9d131b909.js",
+    "service-worker.js": "/creativetimofficial/argon-design-system/blob/master/LICENSE.md/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d4bd73a.js",
+    "static/js/main.e43310d5.chunk.js"
+  ]
+}

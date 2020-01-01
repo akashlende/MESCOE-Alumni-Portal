@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <clipPath id="clip-custom_1">
+      <rect width="600" height="600"/>
+    </clipPath>
+  </defs>
+  <g id="custom_1" data-name="custom – 1" clip-path="url(#clip-custom_1)">
+    <g id="gallery-default" transform="translate(108 108)">
+      <path id="Path_1" data-name="Path 1" d="M336,0H48A48.047,48.047,0,0,0,0,48V336a48.047,48.047,0,0,0,48,48H336a48.047,48.047,0,0,0,48-48V48A48.047,48.047,0,0,0,336,0ZM48,32H336a16.016,16.016,0,0,1,16,16V161.375l-52.687-52.687a16,16,0,0,0-22.625,0L164,221.376l-40.688-40.687a16,16,0,0,0-22.625,0L32,249.376V48A16.016,16.016,0,0,1,48,32ZM336,352H48a16.016,16.016,0,0,1-16-16V294.625l80-80,92.688,92.68a16,16,0,1,0,22.625-22.617L186.625,244,288,142.633l64,64V336A16.016,16.016,0,0,1,336,352Zm0,0"/>
+      <path id="Path_2" data-name="Path 2" d="M128,96A32,32,0,1,1,96,64,32,32,0,0,1,128,96Zm0,0"/>
+    </g>
+  </g>
+</svg>
