@@ -1,5 +1,5 @@
 import EventCard from "./event-card.js";
-import { database } from "./database.js";
+import { database } from "./firebase/database.js";
 
 customElements.define("event-card", EventCard);
 document.addEventListener("load", fetchCover());
@@ -30,7 +30,7 @@ function showEvents(events) {
 		);
 		eventCard.setAttribute("year", events[i].event_date);
 		eventCard.setAttribute("name", events[i].album_name);
-		eventCard.setAttribute("id", "event-"+(i+1));
+		eventCard.setAttribute("id", "event-" + (i + 1));
 		container.appendChild(eventCard);
 		row.appendChild(container);
 		eventCard.addEventListener("mouseover", () => {
@@ -41,6 +41,9 @@ function showEvents(events) {
 	}
 	for (let i = 0; i < events.length; i++) {
 		let card = document.getElementById(`event-${i + 1}`);
-		card.addEventListener("click", () => location.href="gallery-events.php?event="+(i+1));
+		card.addEventListener(
+			"click",
+			() => (location.href = "gallery-events.php?event=" + (i + 1))
+		);
 	}
 }

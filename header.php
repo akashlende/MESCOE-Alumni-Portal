@@ -1,5 +1,5 @@
 <header class="header-global">
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-default">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid px-5">
           <a class="navbar-brand" href="index.php"
             ><img src="assets/img/brand/college_logo.png" class="mr-3" />
@@ -20,11 +20,13 @@
             <div class="navbar-collapse-header">
               <div class="row">
                 <div class="col-6 collapse-brand">
-                  <a class="navbar-brand text-black" href="index.php"
-                    >MESCOE ALUMNI PORTAL</a
+                  <a class="navbar-brand text-default" href="index.php"
+                    >
+                    <img src="assets/img/brand/college_logo.png" class="mr-3" />
+                    MESCOE ALUMNI PORTAL</a
                   >
                 </div>
-          <div class="col-6 collapse-close">
+                <div class="col-6 collapse-close">
                   <button
                     type="button"
                     class="navbar-toggler"
@@ -45,7 +47,7 @@
                 <li class="nav-item">
                     <a href="gallery.php">
                         <button
-                        class="btn btn-flat text-white"
+                        class="btn btn-flat text-white item"
                         type="button"
                         id="gallery"
                         >
@@ -54,11 +56,11 @@
                   </a>
                 </li>
             
-              <ul class="navbar-nav ml-lg-auto">
+
                   <li class="nav-item">
                     <a href="events.php">
                       <button
-                      class="btn btn-flat text-white"
+                      class="btn btn-flat text-white item"
                       type="button"
                       id="events-and-updates"
                       >
@@ -66,12 +68,12 @@
                     </button>
                     </a>
                   </li>
-              </ul>
-            <ul class="navbar-nav ml-lg-auto">
+
+
                 <li class="nav-item">
                     <div class="dropdown">
                       <button
-                        class="btn btn-flat dropdown-toggle text-white"
+                        class="btn btn-flat dropdown-toggle text-white item"
                         type="button"
                         id="batchmates"
                         data-toggle="dropdown"
@@ -90,13 +92,11 @@
                       </div>
                     </div>
                   </li>
-            </ul> 
 
-            <ul class="navbar-nav ml-lg-auto">
                 <li class="nav-item">
                     <div class="dropdown">
                       <button
-                        class="btn btn-flat dropdown-toggle text-white"
+                        class="btn btn-flat dropdown-toggle text-white item"
                         type="button"
                         id="about"
                         data-toggle="dropdown"
@@ -114,42 +114,45 @@
                       </div>
                     </div>
                   </li>
-            </ul> 
+                  <li class="nav-item">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-flat dropdown-toggle text-white item"
+                        type="button"
+                        id="batchmates"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                      <img src="assets/img/user-default.png" alt="" style="width: 2em;">
+                        
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="profile.php">Profile</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </div>
+                    </div>
+                  </li>
+            </ul>  
           </div>
         </div>
       </nav>
     </header>
 <script src="assets/vendor/jquery/jquery.min.js"></script>
-<script type="text/javascript">
-
-  darkenHeader();
-  function darkenHeader() {
-    if(screen.width<=992)
-    {
-      document.getElementById("about").classList.remove("text-white");
-      document.getElementById("gallery").classList.remove("text-white");
-      document.getElementById("batchmates").classList.remove("text-white");
-      document.getElementById("events-and-updates").classList.remove("text-white");
-
-      document.getElementById("about").classList.add("text-dark");
-      document.getElementById("gallery").classList.add("text-dark");
-      document.getElementById("batchmates").classList.add("text-dark");
-      document.getElementById("events-and-updates").classList.add("text-dark");
+<script>
+  $('.navbar-toggler').on('click', () => {
+    let items = document.querySelectorAll('.item');
+    for (let i = 0; i < items.length; i++) {
+      items[i].classList.remove('text-white')
     }
-    else
-    {
-      document.getElementById("about").classList.add("text-white");
-      document.getElementById("gallery").classList.add("text-white");
-      document.getElementById("batchmates").classList.add("text-white");
-      document.getElementById("events-and-updates").classList.add("text-white");
-
-      document.getElementById("about").classList.remove("text-dark");
-      document.getElementById("gallery").classList.remove("text-dark");
-      document.getElementById("batchmates").classList.remove("text-dark");
-      document.getElementById("events-and-updates").classList.remove("text-dark");
-    }    
-  }
-  $(window).resize(function(){
-    darkenHeader();
-  });  
+  });
+  $('.collapse-close').on('click', () => {
+    let items = document.querySelectorAll('.item');
+    for (let i = 0; i < items.length; i++) {
+      items[i].classList.add('text-white')
+    }
+  });
 </script>

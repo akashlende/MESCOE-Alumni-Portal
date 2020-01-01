@@ -25,8 +25,16 @@
   <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
-  <script src="assets/js/firebase.config.js"></script>
   <script type="text/javascript">
+    const firebaseConfig = {
+      apiKey: "AIzaSyCBcqL0b8LqsURhdUOmmSBcntqXSI6uu7g",
+      authDomain: "mescoe-alumni.firebaseapp.com",
+      databaseURL: "https://mescoe-alumni.firebaseio.com",
+      projectId: "mescoe-alumni",
+      storageBucket: "mescoe-alumni.appspot.com",
+      messagingSenderId: "332958193506",
+      appId: "1:332958193506:web:b218c9102289cb36f0fe3b"
+    };
     firebase.initializeApp(firebaseConfig);
   </script>  
   <script src="./assets/vendor/jquery/jquery.min.js"></script>

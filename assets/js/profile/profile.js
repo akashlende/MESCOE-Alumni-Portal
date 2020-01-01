@@ -37,6 +37,22 @@ xhr.onload = function(e) {
 };
 xhr.send();
 
+const rotateLeftButton = document.createElement("button");
+rotateLeftButton.setAttribute(
+	"class",
+	"btn btn-warning rounded-pill btn-icon mb-3 btn-lg"
+);
+rotateLeftButton.innerHTML =
+	'	<span class="btn-inner--icon px-1"><i class="fa fa-undo"></i></span>';
+
+document.querySelector(".upload-image").classList.add("text-center");
+
+document.querySelector(".upload-image").appendChild(rotateLeftButton);
+
+rotateLeftButton.onclick = () => {
+	$(".upload-image").croppie("rotate", 90);
+};
+
 $(".upload-image").croppie({
 	url: "assets/img/user-default.png",
 	enableExif: true,
@@ -45,6 +61,7 @@ $(".upload-image").croppie({
 		height: 300,
 		type: "circle"
 	},
+	enableOrientation: true,
 	boundary: {
 		width: 300,
 		height: 300
@@ -69,6 +86,7 @@ function readURL(input) {
 			$(".upload-image").croppie({
 				url: e.target.result,
 				enableExif: true,
+				enableOrientation: true,
 				viewport: {
 					width: 300,
 					height: 300,
