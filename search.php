@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -90,7 +91,7 @@
 									<div class="form-group">
 										<select class="form-control" name="filter" id="filter">
 											<option value="0">Name</option>
-											<option value="1">City</option>
+											<option value="1">Location</option>
 											<option value="2">Year</option>
 											<option value="3">Degree</option>
 											<option value="4">Department</option>
@@ -219,7 +220,29 @@
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
 
 		<script src="./assets/js/search/search.js" type="module"></script>
-				<script>
+		<script type="text/javascript">
+			/*function findGetParameter(parameterName) {
+			    var result = null,
+			        tmp = [];
+			    location.search
+			        .substr(1)
+			        .split("&")
+			        .forEach(function (item) {
+			          tmp = item.split("=");
+			          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+			        });
+			    return result;
+			}
+			let locn=findGetParameter("location");
+			if (locn) {
+				console.log(locn);
+				document.querySelector("#filter").value=1;
+				document.querySelector(".search-bar").value=locn;
+				searchUser();			}*/
+			
+
+		</script>
+		<script>
 		    document.querySelector('nav').classList.add('bg-default')
 		</script>
 	</body>

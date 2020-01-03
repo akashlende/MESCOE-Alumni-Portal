@@ -1,6 +1,6 @@
 <header class="header-global">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-default">
-        <div class="container-fluid px-5">
+        <div class="container-fluid px-md-5">
           <a class="navbar-brand" href="index.php"
             ><img src="assets/img/brand/college_logo.png" class="mr-3" />
             MESCOE ALUMNI PORTAL

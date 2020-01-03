@@ -7,11 +7,32 @@ document.addEventListener("load", fetchUsers());
 let users = [];
 const row = document.querySelector(".row-grid");
 
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    location.search
+        .substr(1)
+        .split("&")
+        .forEach(function (item) {
+          tmp = item.split("=");
+          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+    return result;
+}
+
 async function fetchUsers() {
 	await database.ref("alumni/").on("value", snapshot => {
 		if (snapshot.val()) {
 			users = Object.values(snapshot.val());
+			console.log(users);
 			showUsers(users);
+			let locn=findGetParameter("location");
+			if (locn) {
+				console.log(locn);
+				document.querySelector("#filter").value=1;
+				document.querySelector(".search-bar").value=locn;
+				searchUser();
+			}
 		}
 	});
 }
@@ -106,7 +127,9 @@ function searchUser() {
 	for (let i = 0; i < users.length; i++) {
 		filters = [
 			users[i].personal.fullName,
-			users[i].personal.city,
+			users[i].personal.city+" "+
+			users[i].personal.state+" "+
+			users[i].personal.country,
 			users[i].personal.year,
 			users[i].academics.degrees[0],
 			users[i].academics.departments[0]

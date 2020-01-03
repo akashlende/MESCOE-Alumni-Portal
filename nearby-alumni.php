@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,7 +75,7 @@ html, body {
   height: 100%;
 }
   </style>
-  <?php 
+<?php 
   require "header.php";
  ?>
 </head>
@@ -105,12 +103,11 @@ html, body {
             coordinates=[];
             coordinates.push(lng);
             coordinates.push(lat);
-            
           });
       }).catch(error => {
           console.error(error);
       });
-      console.log("function"+coordinates)
+
       return coordinates; 
     }         
     
@@ -144,7 +141,7 @@ html, body {
         
         var distinctCities = [];
         let city;
-        $.each(cities, function(i, city){
+        $.each(cities, function(i, city) {
             if($.inArray(city, distinctCities) === -1) distinctCities.push(city);
         });
         console.log(distinctCities);
@@ -156,8 +153,6 @@ html, body {
         var coordinates=new Array();
         for (var i = 0; i <= distinctCities.length; i++) {
           coordinates=await getCoordinates(distinctCities[i]);
-
-          console.log(coordinates);
 
           var doc={
             "type": "Feature",
@@ -200,17 +195,10 @@ html, body {
         });
     }
     async function flyToAlumni(marker) {
-      console.log(marker.geometry.coordinates);
       await fetch("https://api.opencagedata.com/geocode/v1/json?q="+marker.geometry.coordinates[1]+"%2C"+marker.geometry.coordinates[0]+"&key=c045ca4e80004d129bf7e6b0d46b1c80&pretty=1")
         .then(response => {
           response.json().then(data=>{
-            if("city" in data.results[0].components)
-              console.log(data.results[0].components.city);
-            else if("state" in data.results[0].components)
-              console.log(data.results[0].components.state);
-            else
-              console.log(data.results[0].components.country);
-
+            window.location= `search.php?location=${data.results[0].components.country}`;
           });
         });
     }
