@@ -43,7 +43,7 @@ rotateLeftButton.setAttribute(
 	"btn btn-warning rounded-pill btn-icon mb-3 btn-lg"
 );
 rotateLeftButton.innerHTML =
-	'	<span class="btn-inner--icon px-1"><i class="fa fa-undo"></i></span>';
+	'	<span class="btn-inner--icon px-1"><i class="fa fa-undo pr-2"></i>Rotate</span>';
 
 document.querySelector(".upload-image").classList.add("text-center");
 
