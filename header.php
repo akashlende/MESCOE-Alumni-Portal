@@ -23,7 +23,7 @@
                   <a class="navbar-brand text-default" href="index.php"
                     >
                     <img src="assets/img/brand/college_logo.png" class="mr-3" />
-                    MESCOE ALUMNI PORTAL</a
+                    Yeah it works!</a
                   >
                 </div>
                 <div class="col-6 collapse-close">
