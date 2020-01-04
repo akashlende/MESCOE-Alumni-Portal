@@ -10,39 +10,42 @@ let entc = [];
 let mech = [];
 
 function setComp() {
-	for (let i = 21; i >= 4; i--) {
-		let classChip = document.createElement("class-chip");
-		classChip.setAttribute("year", 2000 + i);
-		classChip.setAttribute("id", `comp`);
-		comp.push(classChip);
+	if (comp.length == 0) {
+		for (let i = 21; i >= 4; i--) {
+			let classChip = document.createElement("class-chip");
+			classChip.setAttribute("year", 2000 + i);
+			classChip.setAttribute("id", `comp`);
+			comp.push(classChip);
+		}
 	}
-
 	for (let i = 0; i < comp.length; i++) {
 		document.getElementById(`tabs-departments-1`).appendChild(comp[i]);
 	}
 }
 
 function setEntc() {
-	for (let i = 21; i >= 4; i--) {
-		let classChip = document.createElement("class-chip");
-		classChip.setAttribute("year", 2000 + i);
-		classChip.setAttribute("id", `entc`);
-		entc.push(classChip);
+	if (entc.length == 0) {
+		for (let i = 21; i >= 4; i--) {
+			let classChip = document.createElement("class-chip");
+			classChip.setAttribute("year", 2000 + i);
+			classChip.setAttribute("id", `entc`);
+			entc.push(classChip);
+		}
 	}
-
 	for (let i = 0; i < entc.length; i++) {
 		document.getElementById(`tabs-departments-2`).appendChild(entc[i]);
 	}
 }
 
 function setMech() {
-	for (let i = 21; i >= 4; i--) {
-		let classChip = document.createElement("class-chip");
-		classChip.setAttribute("year", 2000 + i);
-		classChip.setAttribute("id", `mech`);
-		mech.push(classChip);
+	if (mech.length == 0) {
+		for (let i = 21; i >= 4; i--) {
+			let classChip = document.createElement("class-chip");
+			classChip.setAttribute("year", 2000 + i);
+			classChip.setAttribute("id", `mech`);
+			mech.push(classChip);
+		}
 	}
-
 	for (let i = 0; i < mech.length; i++) {
 		document.getElementById(`tabs-departments-3`).appendChild(mech[i]);
 	}
@@ -213,12 +216,17 @@ function getAlumnus(dept, year) {
 
 function showAlumnus(users, dept) {
 	const row = document.createElement("div");
-	const departmentTab = document.getElementById(
-		`tabs-departments-${currentSearchParams.dept}`
-	);
+	const departmentTab = document.getElementById(`tabs-departments-${dept}`);
 	while (departmentTab.firstChild) {
 		departmentTab.removeChild(departmentTab.firstChild);
 	}
+	const backButton = document.createElement("button");
+	backButton.setAttribute(
+		"class",
+		"btn btn-danger rounded-circle btn-icon mt-3 btn-lg"
+	);
+	backButton.innerHTML =
+		'	<span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>';
 	row.setAttribute("class", "row");
 	for (let i = 0; i < users.length; i++) {
 		let container = document.createElement("div");
@@ -246,12 +254,32 @@ function showAlumnus(users, dept) {
 		alumniCard.setAttribute("data-target", "#modal-default");
 		alumniCard.setAttribute("data-toggle", "modal");
 	}
+	departmentTab.appendChild(backButton);
 	departmentTab.appendChild(row);
 
 	for (let i = 0; i < users.length; i++) {
 		let card = document.getElementById(`alumni-${dept + 1}-${i + 1}`);
 		card.addEventListener("click", () => showUser(i));
 	}
+
+	backButton.onclick = () => {
+		while (departmentTab.firstChild) {
+			departmentTab.removeChild(departmentTab.firstChild);
+		}
+		switch (dept) {
+			case "1":
+				setComp();
+				break;
+			case "2":
+				setEntc();
+				break;
+			case "3":
+				setMech();
+				break;
+			default:
+				break;
+		}
+	};
 }
 
 function showUser(i) {
