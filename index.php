@@ -45,7 +45,7 @@
 						    	onclick="document.getElementById('toast-1').classList.add('d-none');
 						    	setTimeout(()=>{
 						    		document.getElementById('toast-1').classList.remove('d-none');
-						    	},2000);"
+						    	},10000);"
 						    >
 						      <span aria-hidden="true">&times;</span>
 						  	</button>
@@ -65,7 +65,7 @@
 						    	document.getElementById(`toast-${toastNo}`).classList.add('d-none');
 						    	setTimeout(()=>{
 						    		document.getElementById(`toast-${toastNo}`).classList.remove('d-none');
-						    	},2000);"
+						    	},10000);"
 						    >
 						      <span aria-hidden="true">&times;</span>
 						  	</button>
