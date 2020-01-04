@@ -17,7 +17,6 @@
 		<link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
 		<link href="assets/css/argon.css?v=1.1.0" rel="stylesheet"/>
 
-		<script src="https://kit.fontawesome.com/50376f70a4.js" crossorigin="anonymous"></script>
 	</head>
 	<body onscroll="changeNav()">
 		<main>
@@ -36,7 +35,8 @@
 						</div>
 					</div>
 					<div class="pl-2" style="position: absolute; z-index: 5; bottom: 120px;">
-						<div class="toast" style="opacity: 65%" role="alert" aria-live="assertive" aria-atomic="true" id="toast-1">
+
+						<div class="toast" style="opacity: 100%" role="alert" aria-live="assertive" aria-atomic="true" id="toast-1">
 						  <div class="toast-header">
 						    <i class="fa fa-bell text-default pr-2" aria-hidden="true"></i>
 						    <strong class="mr-auto">Alumni Meet 2k19</strong>
@@ -50,11 +50,11 @@
 						      <span aria-hidden="true">&times;</span>
 						  	</button>
 						  </div>
-						  <div class="toast-body">
+						  <div class="toast-body text-decoration-none" id="toast-body-1">
 						    Gathering the MESCOE alumni. 
-						    <a href="#" class="text-success">Know more</a>
 						  </div>
 						</div>
+
 						<div class="toast" style="opacity: 65%" role="alert" aria-live="assertive" aria-atomic="true" id="toast-2">
 						  <div class="toast-header">
 						   	<i class="fa fa-bell text-default pr-2" aria-hidden="true"></i>
@@ -109,89 +109,184 @@
 					</div>
 				</section>
 			</div>
-			<div class="container">
-				<p class="h2 text-center mb-3">EVENTS</p>
-				<div class="row">
-					<div class="col-lg-4 mb-4 col-md-12">
-						<div class="card" style="box-shadow:3px 3px 5px 6px #ccc">
-							<img class="card-img-top" src="assets/img/sample1.jpg" alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Event title</h4>
-								<p class="card-text">Some quick example text to build on the event title and make up the bulk of the event's content.</p>
-								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-notification"><i class="fa fa-bookmark-o"></i> Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 mb-4 col-md-12">
-						<div class="card" style="box-shadow:3px 3px 5px 6px #ccc">
-							<img class="card-img-top" src="assets/img/sample2.jpg" alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Event title</h4>
-								<p class="card-text">Some quick example text to build on the event title and make up the bulk of the event's content.</p>
-								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-notification"><i class="fa fa-bookmark-o"></i> Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 mb-4 col-md-12">
-						<div class="card" style="box-shadow:3px 3px 5px 6px #ccc">
-							<img class="card-img-top" src="assets/img/sample3.jpg" alt="Card image cap">
-							<div class="card-body">
-								<h4 class="card-title">Event title</h4>
-								<p class="card-text">Some quick example text to build on the event title and make up the bulk of the event's content.</p>
-								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-notification"><i class="fa fa-bookmark-o"></i> Read More</a>
-							</div>
-						</div>
-					</div>
+			<div class="container" >
+			<p class="h2 text-center mb-3">EVENTS & NEWS</p>
+			<div class="row ">
+			  <div class="col-lg-4 mb-4 col-md-12 d-none" id="noeve1">
+				<div class="card" style="box-shadow:3px 3px 5px 6px #ccc">
+				  <img
+					class="card-img-top"
+					src=""
+					alt="Card image cap"
+					id="imgs1"
+				  />
+				  <div class="card-body">
+					<h4 class="card-title" id="eventname1"></h4>
+					<p class="card-text text-default" id="eventdetail1">
+					  
+					</p>
+					<a
+					  href="#"
+					  class="btn btn-primary"
+					  data-toggle="modal"
+					  data-target="#modal-notification"
+					  onclick="getdetails('eventname1')"
+					  ><i class="fa fa-bookmark-o pr-2"></i> Read More</a
+					>
+				  </div>
 				</div>
+			  </div>
+			  <div class="col-lg-4 mb-4 col-md-12 d-none" id="noeve2">
+				<div class="card" style="box-shadow:3px 3px 5px 6px #ccc">
+				  <img
+					class="card-img-top"
+					src=""
+					alt="Card image cap"
+					id="imgs2"
+				  />
+				  <div class="card-body">
+					<h4 class="card-title" id="eventname2"></h4>
+					<p class="card-text text-default" id="eventdetail2">
+					 
+					</p>
+					<a
+					  href="#"
+					  class="btn btn-primary"
+					  data-toggle="modal"
+					  data-target="#modal-notification"
+					  onclick="getdetails('eventname2')"
+					  ><i class="fa fa-bookmark-o pr-2"></i> Read More</a
+					>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-lg-4 mb-4 col-md-12 d-none" id="noeve3">
+				<div class="card" style="box-shadow:3px 3px 5px 6px #ccc">
+				  <img
+					class="card-img-top"
+					src=""
+					alt="Card image cap"
+					id="imgs3"
+				  />
+				  <div class="card-body">
+					<h4 class="card-title" id="eventname3"></h4>
+					<p class="card-text text-default" id="eventdetail3">
+					
+					</p>
+					<a
+					  href="#"
+					  class="btn btn-primary"
+					  data-toggle="modal"
+					  data-target="#modal-notification"
+					  onclick="getdetails('eventname3')"
+					  ><i class="fa fa-bookmark-o pr-2"></i> Read More</a
+					>
+				  </div>
+				</div>
+			  </div>
 			</div>
+		  </div>
 			<div class="col-md-4">
-				<div class="modal fade" id="modal-notification" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-					<div class="modal-dialog modal-danger modal-dia	log-centered modal-" role="document">
-						<div class="modal-content bg-gradient-primary">
-							<div class="modal-header" style="border:none">
-								<h2 class="modal-title" id="modal-title-notification">Event Title</h2>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-							</div>
-							<div class="modal-body">
-								<div class="text-center"><i class="ni ni-bell-55 ni-3x"></i></div>
-								<div class="table-responsive mx-auto p-3">
-									<table class="table text-white">
-										<tr>
-											<td>
-												<h5 class="text-white"><a><i class="fas fa-hourglass-start"></i> Start-Date:- 23-04-2020</a></h5>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h5 class="text-white"><a><i class="fas fa-hourglass-end"></i> End-Date:- 23-04-2020</a></h5>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h5 class="text-white"><a><i class="fas fa-user-clock"></i> Start-time:- 12:30pm</a></h5>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h5 class="text-white"><a><i class="fas fa-stopwatch"></i> Duration:- 2hrs</a></h5>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<h5 class="text-white"><a><i class="fas fa-map-marker-alt"></i> Location:- Mescoe, Seminar Hall</a></h5>
-											</td>
-										</tr>
-										<tr>
-											<td></td>
-										</tr>
-									</table>
-								</div>
-							</div>
-							<div class="modal-footer" style="border:none"><button type="button" class="btn btn-white">Register</button> <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal">Close</button></div>
-						</div>
+			<div
+			  class="modal fade"
+			  id="modal-notification"
+			  tabindex="-1"
+			  role="dialog"
+			  aria-labelledby="modal-notification"
+			  aria-hidden="true"
+			>
+			  <div
+				class="modal-dialog modal-danger modal-dia log-centered modal-"
+				role="document"
+			  >
+				<div class="modal-content bg-gradient-primary">
+				  <div class="modal-header" style="border: none;">
+					<h2 class="modal-title" id="modal-title-notification">
+					  Event Title
+					</h2>
+					<button
+					  type="button"
+					  class="close"
+					  data-dismiss="modal"
+					  aria-label="Close"
+					>
+					  <span aria-hidden="true">×</span>
+					</button>
+				  </div>
+	  
+				  <div class="modal-body">
+					<div class=" text-center">
+					  <i class="ni ni-bell-55 ni-3x"></i>
 					</div>
+	  
+					<div class="table-responsive mx-auto p-3">
+					  <table class="table text-white">
+						<tr>
+						  <td>
+							<h5 class="text-white">
+							  <a id="sdate99"
+								><i class="fas fa-hourglass-start"></i> Start-Date:-
+								23-04-2020</a
+							  >
+							</h5>
+						  </td>
+						</tr>
+	  
+						<tr>
+						  <td>
+							<h5 class="text-white">
+							  <a id="edate99"
+								><i class="fas fa-hourglass-end"></i> End-Date:-
+								23-04-2020</a
+							  >
+							</h5>
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+							<h5 class="text-white">
+							  <a id="stime99"
+								><i class="fas fa-user-clock"></i> Start-time:-
+								12:30pm</a
+							  >
+							</h5>
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+							<h5 class="text-white">
+							  <a id="dur99"
+								><i class="fas fa-stopwatch"></i> Duration:- 2hrs</a
+							  >
+							</h5>
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+							<h5 class="text-white">
+							  <a id="loc99"
+								><i class="fas fa-map-marker-alt"></i> Location:-
+								Mescoe, Seminar Hall</a
+							  >
+							</h5>
+						  </td>
+						</tr>
+						<tr>
+						  <td></td>
+						</tr>
+					  </table>
+					</div>
+				  </div>
+	  
+				  <div class="modal-footer" style="border: none;">
+					<button type="button" class="btn btn-white" id="reg1">Register</button>
+					<!-- <button type="button" class="btn btn-link text-white ml-auto"
+					  data-dismiss="modal">Close</button> -->
+				  </div>
 				</div>
+			  </div>
 			</div>
+		  </div>
 			<style>.footer{background:#152f4f;color:#fff}li a{color:#fff;transition:color .2s}a{color:#fff;transition:color .2s}</style>
 			<div class="mt-5 pt-5 pb-5 footer justify-content-center bg-default">
 				<div class="container">
@@ -204,6 +299,11 @@
 							<h4 class="mt-lg-0 mt-sm-3" style="color:#f5f5f5">Contact</h4>
 							<p class="mb-0"><i class="fa fa-phone mr-3"></i>(020) 26163831</p>
 							<p><i class="fa fa-envelope-o mr-3"></i>principal@mescoepune.org</p>
+							  <div class="row container mb-5">
+								
+								<a href="https://www.facebook.com/Modern-Education-Societys-College-of-Engineering-Pune-308131025963770/" class="fa fa-facebook mr-3" target="_blank"></a>
+								<a href="https://www.linkedin.com/school/modern-education-society's-college-of-engineering-pune/about/" class="fa fa-linkedin ml-3 mr-3" target="_blank"></a>
+							  </div>
 						</div>
 						<div class="col-lg-4 col-xs-12 location">
 							<h4 style="color:#f5f5f5" class="mt-lg-0 mt-sm-4">Address</h4>
@@ -269,5 +369,6 @@
 			  }
 			}
 		</script><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],i=0,a=[];i<n.length;i++)t=n[i],Object.prototype.hasOwnProperty.call(s,t)&&s[t]&&a.push(s[t][0]),s[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(p&&p(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==s[u]&&(n=!1)}n&&(c.splice(r--,1),e=i(i.s=t[0]))}return e}var t={},s={1:0},c=[];function i(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.m=l,i.c=t,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(r,e){if(1&e&&(r=i(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)i.d(t,n,function(e){return r[e]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/creativetimofficial/argon-design-system/blob/master/LICENSE.md/";var r=this["webpackJsonpargon-design-system"]=this["webpackJsonpargon-design-system"]||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var p=n;f()}([])</script><script src="/creativetimofficial/argon-design-system/blob/master/LICENSE.md/static/js/main.e43310d5.chunk.js"></script>
+		<script src="assets/js/index.js"></script>
 	</body>
 </html>

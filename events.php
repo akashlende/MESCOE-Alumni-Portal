@@ -16,11 +16,6 @@
       href="./assets/css/argon.css?v=1.1.0"
       rel="stylesheet"
     />
-    <!-- Fonts -->
-		<link
-			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
-			rel="stylesheet"
-		/>
     <!-- firebase -->
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
@@ -28,9 +23,6 @@
     <title>Events</title>
   </head>
   <body>
-    <?php 
-  require "header.php";
-?>
     <div class="container" style="position: relative; top: 80px">
       <div id="addele"></div>
     </div>
@@ -128,7 +120,9 @@
             </div>
 
             <div class="modal-footer" style="border: none;">
-              <button type="button" class="btn btn-white">Register</button>
+              <button type="button" id="reg1" class="btn btn-white">
+                Register
+              </button>
               <!-- <button type="button" class="btn btn-link text-white ml-auto"
                 data-dismiss="modal">Close</button> -->
             </div>
@@ -153,42 +147,26 @@
       firebase.initializeApp(firebaseConfig);
       const db = firebase.database().ref("events");
     </script>
-
-    <!-- <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyA1yphH7PJIQ5hafxY2Ijv-Sd49RvCfhCY",
-        authDomain: "mescoe-9268f.firebaseapp.com",
-        databaseURL: "https://mescoe-9268f.firebaseio.com",
-        projectId: "mescoe-9268f",
-        storageBucket: "mescoe-9268f.appspot.com",
-        messagingSenderId: "848004522181",
-        appId: "1:848004522181:web:85d02bd3fe39cdb60950ac",
-        measurementId: "G-7SEQEN8L7Q"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-
-      const db = firebase.database().ref("events");
-    </script> -->
     <!-- JS -->
     <script src="assets/js/eventNUpdate.js"></script>
-    <!-- Core -->
-		<script src="./assets/vendor/jquery/jquery.min.js"></script>
-		<script src="./assets/vendor/popper/popper.min.js"></script>
-		<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-		<script src="./assets/vendor/headroom/headroom.min.js"></script>
-		<script src="./assets/js/croppie/croppie.min.js"></script>
-		<!-- Optional JS -->
-		<script src="./assets/vendor/onscreen/onscreen.min.js"></script>
-		<script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
-		<script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-		<!-- Argon JS -->
-		<script src="./assets/js/argon.js?v=1.1.0"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+    <!-- bootstrap JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <?php require "header.php" ?>
     <script>
       document.querySelector(".navbar").classList.add("bg-default");
     </script>
