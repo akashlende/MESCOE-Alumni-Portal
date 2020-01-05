@@ -1,6 +1,6 @@
-<?php 
-	require "header.php";
-	?>
+<?php
+require "header.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -61,7 +61,7 @@
 							<div class="row align-items-center justify-content-center">
 								<div class="col-lg-6 text-center">
 									<h1 class="text-white" id="alumni-page">
-										MESCOE ALUMNI PORTAL
+										Alumni Association of MESCOE
 									</h1>
 									<p id="hero" class="lead text-white">
 										Building a strong community!
@@ -514,7 +514,7 @@
 					</div>
 				</div>
 			</div>
-			<?php require "login.php"; ?>
+			<?php require "login.php";?>
 		</main>
 		<script src="assets/vendor/jquery/jquery.min.js"></script>
 		<script src="assets/vendor/popper/popper.min.js"></script>
