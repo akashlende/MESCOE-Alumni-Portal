@@ -54,7 +54,7 @@ export default function profileForm(dataURL) {
 			};
 			if (dataURL != null) {
 				storage
-					.child(`alumni/${fullName.replace(/ /g, "_")}`)
+					.child(`alumni/${fullName.replace(/[ ]/g, "_")}`)
 					.putString(dataURL, "data_url")
 					.then(snapshot => {
 						snapshot.ref
@@ -65,7 +65,9 @@ export default function profileForm(dataURL) {
 									.ref(`alumni/${fullName.replace(/ /g, "_")}`)
 									.set(alumni)
 									.then(snap => {
-										window.location.replace("./search.php");
+										window.setTimeout(() => {
+											window.location.replace("./search.php");
+										}, 2000);
 									})
 									.catch(e => {
 										console.error(e);

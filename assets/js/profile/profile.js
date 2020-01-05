@@ -105,8 +105,8 @@ function readURL(input) {
 $(".upload-image").on("update.croppie", async (e, cropData) => {
 	dataURL = await $(".upload-image").croppie("result", {
 		type: "base64",
-		format: "png",
-		quality: 0.7,
+		format: "jpeg",
+		quality: 0.8,
 		circle: false
 	});
 	profileForm(dataURL);

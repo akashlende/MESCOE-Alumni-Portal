@@ -219,7 +219,7 @@ require "header.php";
 											id="bio"
 											rows="3"
 											placeholder="Write something about yourself"
-											maxlength="100"
+											maxlength="200"
 										></textarea>
 									</div>
 								</div>
