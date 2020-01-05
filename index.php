@@ -106,7 +106,7 @@
 									onclick="document.getElementById('toast-1').classList.add('d-none');
 						    	setTimeout(()=>{
 						    		document.getElementById('toast-1').classList.remove('d-none');
-						    	},2000);"
+						    	},20000);"
 								>
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -134,10 +134,10 @@
 								<button
 									type="button"
 									class="ml-2 mb-1 close"
-									onclick="document.getElementById('toast-1').classList.add('d-none');
+									onclick="document.getElementById('toast-2').classList.add('d-none');
 						    	setTimeout(()=>{
-						    		document.getElementById('toast-1').classList.remove('d-none');
-						    	},2000);"
+						    		document.getElementById('toast-2').classList.remove('d-none');
+						    	},20000);"
 								>
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -163,10 +163,10 @@
 									type="button"
 									class="ml-2 mb-1 close"
 									onclick="let toastNo=2;
-						    	document.getElementById(`toast-${toastNo}`).classList.add('d-none');
+						    	document.getElementById(`toast-3`).classList.add('d-none');
 						    	setTimeout(()=>{
-						    		document.getElementById(`toast-${toastNo}`).classList.remove('d-none');
-						    	},2000);"
+						    		document.getElementById(`toast-3`).classList.remove('d-none');
+						    	},20000);"
 								>
 									<span aria-hidden="true">&times;</span>
 								</button>
