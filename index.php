@@ -1,7 +1,4 @@
-<?php 
-	require "header.php";
-	?> 
-<!doctype html>
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
@@ -73,13 +70,7 @@
 						  </div>
 						</div>
 
-						<div class="toast d-none" style="opacity: 65%" role="alert" aria-live="assertive" aria-atomic="true" id="toast-3">
-						  <div class="toast-header">
-						   	<i class="fa fa-bell text-default pr-2" aria-hidden="true"></i>
-						    <strong class="mr-auto" id='eventnamestack3'>Hashcode</strong>
-						    <small id="datestack3">February</small >					    
-						    <button type="button" class="ml-2 mb-1 close" 
-						    	onclick="let toastNo=2;
+
 						    	document.getElementById(`toast-${toastNo}`).classList.add('d-none');
 						    	setTimeout(()=>{
 						    		document.getElementById(`toast-${toastNo}`).classList.remove('d-none');

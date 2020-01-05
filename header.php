@@ -3,7 +3,7 @@
 		<div class="container-fluid px-md-5">
 			<a class="navbar-brand" href="index.php"
 				><img src="assets/img/brand/college_logo.png" class="mr-3" />
-				MESCOE ALUMNI PORTAL
+				ALUMNI ASSOCIATION OF MESCOE
 			</a>
 			<button
 				class="navbar-toggler"
