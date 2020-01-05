@@ -32,7 +32,7 @@ function compressImage(base64) {
 			const ctx = canvas.getContext("2d");
 			ctx.drawImage(img, 0, 0, width, height);
 
-			resolve(canvas.toDataURL("image/jpeg", 0.8));
+			resolve(canvas.toDataURL("image/jpeg", 0.5));
 		};
 		img.onerror = function(err) {
 			reject(err);
