@@ -1,3 +1,6 @@
+<?php
+require "header.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -40,9 +43,6 @@
 		<link href="assets/css/argon.css?v=1.1.0" rel="stylesheet" />
 	</head>
 	<body onscroll="changeNav()">
-		<?php
-require "header.php";
-?>
 		<main>
 			<div class="position-relative">
 				<section class="section section-lg section-hero section-shaped">
@@ -61,7 +61,7 @@ require "header.php";
 							<div class="row align-items-center justify-content-center">
 								<div class="col-lg-6 text-center">
 									<h1 class="text-white" id="alumni-page">
-										MESCOE ALUMNI PORTAL
+										Alumni Association of MESCOE
 									</h1>
 									<p id="hero" class="lead text-white">
 										Building a strong community!
@@ -149,7 +149,7 @@ require "header.php";
 
 						<div
 							class="toast d-none"
-							style="opacity: 100%"
+							style="opacity: 65%"
 							role="alert"
 							aria-live="assertive"
 							aria-atomic="true"
@@ -528,9 +528,9 @@ require "header.php";
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
-
+		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
 		<script src="assets/js/remember.js"></script>
+		<script src="assets/js/loginScript.js"></script>
 		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 		<script type="text/javascript">
 			var app = document.getElementById("hero"),
@@ -680,7 +680,6 @@ require "header.php";
 				f();
 			})([]);
 		</script>
-		<script src="assets/js/index.js" type="module"></script>
-		<script src="assets/js/loginScript.js"></script>
+		<script src="assets/js/index.js"></script>
 	</body>
 </html>
