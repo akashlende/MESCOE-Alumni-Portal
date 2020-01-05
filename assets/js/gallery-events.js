@@ -25,8 +25,10 @@ async function fetchPhotos() {
 	await database.ref(`gallery/`).on("value", snapshot => {
 		if (snapshot.val()) {
 			photos = Object.values(snapshot.val());
-			document.getElementById("Event-title").innerHTML =
+			document.getElementById("event-title").innerHTML =
 				photos[eventId - 1].album_name;
+			document.getElementById("event-desc").innerHTML =
+				photos[eventId - 1].event_desc;
 			showPhotos(photos[eventId - 1].photos);
 		}
 	});

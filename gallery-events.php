@@ -63,7 +63,8 @@ require "header.php";
 				<section class="section section-lg">
 					<div class="container">
 						<div class="col-md-12">
-							<p class="h3 mb-3" id="Event-title"></p>
+							<p class="h3 mb-3" id="event-title"></p>
+							<p class="h6" id="event-desc"></p>
 						</div>
 						<div class="row justify-content-center">
 							<div class="col-lg-12">

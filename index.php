@@ -1,6 +1,3 @@
-<?php
-require "header.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -43,6 +40,9 @@ require "header.php";
 		<link href="assets/css/argon.css?v=1.1.0" rel="stylesheet" />
 	</head>
 	<body onscroll="changeNav()">
+		<?php
+require "header.php";
+?>
 		<main>
 			<div class="position-relative">
 				<section class="section section-lg section-hero section-shaped">
@@ -85,7 +85,7 @@ require "header.php";
 						style="position: absolute; z-index: 5; bottom: 120px;"
 					>
 						<div
-							class="toast"
+							class="toast d-none"
 							style="opacity: 100%"
 							role="alert"
 							aria-live="assertive"
@@ -94,27 +94,30 @@ require "header.php";
 						>
 							<div class="toast-header">
 								<i class="fa fa-bell text-default pr-2" aria-hidden="true"></i>
-								<strong class="mr-auto">Alumni Meet 2k19</strong>
-								<small class="text-muted pl-2">11th January, 2019</small>
+								<strong class="mr-auto" id="eventnamestack1"
+									>Alumni Meet 2k19</strong
+								>
+								<small class="text-muted pl-2" id="datestack1"
+									>11th January, 2019</small
+								>
 								<button
 									type="button"
 									class="ml-2 mb-1 close"
 									onclick="document.getElementById('toast-1').classList.add('d-none');
 						    	setTimeout(()=>{
 						    		document.getElementById('toast-1').classList.remove('d-none');
-						    	},10000);"
+						    	},2000);"
 								>
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
 							<div class="toast-body text-decoration-none" id="toast-body-1">
-								Gathering the MESCOE alumni.
+								<p id="detailsstack1">Gathering the MESCOE alumni.</p>
 							</div>
 						</div>
-
 						<div
-							class="toast"
-							style="opacity: 65%"
+							class="toast d-none"
+							style="opacity: 100%"
 							role="alert"
 							aria-live="assertive"
 							aria-atomic="true"
@@ -122,8 +125,40 @@ require "header.php";
 						>
 							<div class="toast-header">
 								<i class="fa fa-bell text-default pr-2" aria-hidden="true"></i>
-								<strong class="mr-auto">Hashcode</strong>
-								<small>February</small>
+								<strong class="mr-auto" id="eventnamestack2"
+									>Alumni Meet 2k19</strong
+								>
+								<small class="text-muted pl-2" id="datestack2"
+									>11th January, 2019</small
+								>
+								<button
+									type="button"
+									class="ml-2 mb-1 close"
+									onclick="document.getElementById('toast-1').classList.add('d-none');
+						    	setTimeout(()=>{
+						    		document.getElementById('toast-1').classList.remove('d-none');
+						    	},2000);"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="toast-body text-decoration-none" id="toast-body-1">
+								<p id="detailsstack2">Gathering the MESCOE alumni.</p>
+							</div>
+						</div>
+
+						<div
+							class="toast d-none"
+							style="opacity: 100%"
+							role="alert"
+							aria-live="assertive"
+							aria-atomic="true"
+							id="toast-3"
+						>
+							<div class="toast-header">
+								<i class="fa fa-bell text-default pr-2" aria-hidden="true"></i>
+								<strong class="mr-auto" id="eventnamestack3">Hashcode</strong>
+								<small id="datestack3">February</small>
 								<button
 									type="button"
 									class="ml-2 mb-1 close"
@@ -131,14 +166,16 @@ require "header.php";
 						    	document.getElementById(`toast-${toastNo}`).classList.add('d-none');
 						    	setTimeout(()=>{
 						    		document.getElementById(`toast-${toastNo}`).classList.remove('d-none');
-						    	},10000);"
+						    	},2000);"
 								>
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
 							<div class="toast-body">
-								Event by Developer Students Club. <br />*Venue and Date are
-								subject to change.
+								<p id="detailsstack3">
+									Event by Developer Students Club. <br />*Venue and Date are
+									subject to change.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -491,9 +528,9 @@ require "header.php";
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+
 		<script src="assets/js/remember.js"></script>
-		<script src="assets/js/loginScript.js"></script>
 		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 		<script type="text/javascript">
 			var app = document.getElementById("hero"),
@@ -643,7 +680,7 @@ require "header.php";
 				f();
 			})([]);
 		</script>
-		<script src="/creativetimofficial/argon-design-system/blob/master/LICENSE.md/static/js/main.e43310d5.chunk.js"></script>
-		<script src="assets/js/index.js"></script>
+		<script src="assets/js/index.js" type="module"></script>
+		<script src="assets/js/loginScript.js"></script>
 	</body>
 </html>

@@ -223,10 +223,10 @@ function showAlumnus(users, dept) {
 	const backButton = document.createElement("button");
 	backButton.setAttribute(
 		"class",
-		"btn btn-danger rounded-circle btn-icon mt-3 btn-lg"
+		"btn btn-danger rounded-pill btn-icon mt-3 btn-lg"
 	);
 	backButton.innerHTML =
-		'	<span class="btn-inner--icon"><i class="fa fa-arrow-left"></i></span>';
+		'	<span class="btn-inner--icon"><i class="fa fa-arrow-left pr-3"></i>Back</span>';
 	row.setAttribute("class", "row");
 	for (let i = 0; i < users.length; i++) {
 		let container = document.createElement("div");

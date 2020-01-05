@@ -46,6 +46,7 @@ require "header.php";
 								<div class="form-group h6">
 									<label for="eventName">Album</label>
 									<input
+										required
 										name="alb_name"
 										type="text"
 										class="form-control input-group input-group-alternative"
@@ -53,9 +54,6 @@ require "header.php";
 										aria-describedby="event-name"
 										placeholder="Please enter album name.."
 									/>
-									<small id="emailHelp" class="form-text text-muted"
-										>Please add correct event-name!</small
-									>
 								</div>
 								<div class="form-group">
 									<label for="eventDate">Event Date</label>
@@ -67,10 +65,12 @@ require "header.php";
 											></span>
 										</div>
 										<input
+											required
 											class="form-control datepicker"
 											placeholder="Select date"
 											type="text"
 											name="event_date"
+											autocomplete="off"
 										/>
 									</div>
 								</div>
@@ -84,6 +84,7 @@ require "header.php";
 											<span class="input-group-text"></span>
 										</div>
 										<textarea
+											required
 											class="form-control"
 											id="eventDescription"
 											aria
@@ -97,10 +98,10 @@ require "header.php";
 										<label>Choose Album Cover</label>
 										<div class="input-group input-group-alternative">
 											<input
+												required
 												class="form-control"
 												type="file"
 												id="cover"
-												required
 												accept="image/x-png, image/jpeg"
 											/>
 										</div>
@@ -158,7 +159,7 @@ require "header.php";
 			firebase.initializeApp(firebaseConfig);
 		</script>
 
-		<script src="assets/js/gall_firebase.js"></script>
+		<script src="assets/js/gallery-upload.js"></script>
 		<script>
 			document.querySelector("nav").classList.add("bg-default");
 		</script>

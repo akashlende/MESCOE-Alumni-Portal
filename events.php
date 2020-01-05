@@ -4,25 +4,26 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<!-- bootstrap CSS -->
 		<link
 			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-			crossorigin="anonymous"
-		/>
-		<link
 			type="text/css"
-			href="./assets/css/argon.css?v=1.1.0"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		/>
+		<link href="assets/img/brand/favicon.png" rel="icon" type="image/png" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
 			rel="stylesheet"
 		/>
-		<!-- firebase -->
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+		<link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet" />
+		<link
+			href="assets/vendor/font-awesome/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+		<link href="assets/css/argon.css?v=1.1.0" rel="stylesheet" />
 		<title>Events</title>
 	</head>
 	<body>
+	<?php require "header.php"?>
 		<div class="container" style="position: relative; top: 80px">
 			<div id="addele"></div>
 		</div>
@@ -131,6 +132,9 @@
 			</div>
 		</div>
 		<!-- firebase -->
+		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 		<script>
 			// Your web app's Firebase configuration
@@ -148,7 +152,7 @@
 			const db = firebase.database().ref("events");
 		</script>
 		<!-- JS -->
-		<script src="assets/js/eventNUpdate.js"></script>
+		<script src="assets/js/events.js"></script>
 		<!-- bootstrap JS -->
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<script
@@ -166,7 +170,6 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
-		<?php require "header.php"?>
 		<script>
 			document.querySelector(".navbar").classList.add("bg-default");
 		</script>

@@ -43,27 +43,40 @@
 				</div>
 				<ul class="navbar-nav ml-lg-auto">
 					<li class="nav-item">
-						<a href="gallery.php">
+						<div class="dropdown">
 							<button
-								class="btn btn-flat text-white item"
+								class="btn btn-flat dropdown-toggle text-white item"
 								type="button"
-								id="gallery"
+								id="forms"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
 							>
-								GALLERY
+								FORMS
 							</button>
-						</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="gallery-upload.php">Gallery Upload</a>
+								<a class="dropdown-item" href="event-upload.php">Event Upload</a>
+							</div>
+						</div>
 					</li>
-
 					<li class="nav-item">
-						<a href="events.php">
+						<div class="dropdown">
 							<button
-								class="btn btn-flat text-white item"
+								class="btn btn-flat dropdown-toggle text-white item"
 								type="button"
-								id="events-and-updates"
+								id="media"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
 							>
-								EVENTS & UPDATES
+								MEDIA
 							</button>
-						</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="gallery.php">Gallery</a>
+								<a class="dropdown-item" href="events.php">Events & Updates</a>
+							</div>
+						</div>
 					</li>
 					<li class="nav-item">
 						<div class="dropdown">

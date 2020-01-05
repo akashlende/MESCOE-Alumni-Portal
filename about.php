@@ -56,31 +56,11 @@
 			<div class="row mt-3">
 				<div class="col-md-12 text-justify">
 					<p>
-						1Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-						nobis cum possimus inventore nostrum nulla esse necessitatibus
-						consectetur ex quas. Hic distinctio nostrum neque sed adipisci,
-						minus nihil eaque expedita eius eveniet commodi temporibus autem ex
-						molestiae quaerat vitae, excepturi alias fuga qui? Veritatis,
-						consequatur ex quas. Hic distinctio nostrum neque sed adipisci,
-						minus nihil eaque expedita eius eveniet commodi temporibus autem ex
-						molestiae quaerat vitae, excepturi alias fuga qui? Veritatis,
-						consequaturex quas. Hic distinctio nostrum neque sed adipisci, minus
-						nihil eaque expedita eius eveniet commodi temporibus autem ex
-						molestiae eius eveniet commodi temporibus.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nobis
-						cum possimus inventore nostrum nulla esse necessitatibus consectetur
-						ex quas. Hic distinctio nostrum neque sed adipisci, minus nihil
-						eaque expedita eius eveniet commodi temporibus autem ex molestiae
-						quaerat vitae, excepturi alias fuga qui? Veritatis, consequatur
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nobis
-						cum possimus inventore nostrum nulla esse necessitatibus consectetur
-						ex quas. Hic distinctio nostrum neque sed adipisci, minus nihil
-						eaque expedita eius eveniet commodi temporibus autem ex molestiae
-						quaerat vitae, excepturi alias fuga qui? Veritatis, consequatur
+						Modern Education Society was established in 1932, with motto "FOR
+						THE SPREAD OF LIGHT". The Modern Education Society's College of
+						Engineering, Pune was established in 1999 and conducts the following
+						courses leading to Bachelor's Degree in Engineering & Master Degree
+						in Engineering
 					</p>
 				</div>
 			</div>
