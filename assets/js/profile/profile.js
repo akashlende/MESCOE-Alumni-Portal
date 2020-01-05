@@ -3,6 +3,23 @@ import dropdowns from "./dropdowns.js";
 import degrees from "./degrees.js";
 import profileForm from "./form.js";
 
+$(document).ready(() => {
+	const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+	$(".upload-image").croppie("bind", {
+		url: loggedInUser.photoURL
+	});
+	document
+		.getElementById("name")
+		.setAttribute("value", loggedInUser.displayName);
+	document.getElementById("name").setAttribute("readonly", "readonly");
+	document
+		.getElementById("email")
+		.setAttribute(
+			"value",
+			loggedInUser.email == null ? "" : loggedInUser.email
+		);
+});
+
 customElements.define("degree-card", DegreeCard);
 
 window.degree1 = "S";

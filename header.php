@@ -42,7 +42,7 @@
 					</div>
 				</div>
 				<ul class="navbar-nav ml-lg-auto">
-					<li class="nav-item">
+					<li class="nav-item forms-item">
 						<div class="dropdown">
 							<button
 								class="btn btn-flat dropdown-toggle text-white item"
@@ -60,7 +60,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item media-item">
 						<div class="dropdown">
 							<button
 								class="btn btn-flat dropdown-toggle text-white item"
@@ -78,7 +78,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item batch-item">
 						<div class="dropdown">
 							<button
 								class="btn btn-flat dropdown-toggle text-white item"
@@ -117,7 +117,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item login-item">
 						<div class="dropdown">
 							<button
 								class="btn btn-flat dropdown-toggle text-white item user-button"
@@ -131,12 +131,14 @@
 									src="assets/img/user-default.png"
 									alt=""
 									style="width: 2em;"
+									id="profile-image"
+									class="rounded-circle"
 								/>
-								<span class="pl-2">User Name</span>
+								<span class="pl-2" id="user-name">User Name</span>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 								<a class="dropdown-item" href="profile.php">Profile</a>
-								<a class="dropdown-item" href="#" id="logout">Logout</a>
+								<button class="dropdown-item" id="logout">Logout</button>
 							</div>
 						</div>
 					</li>
@@ -146,6 +148,9 @@
 	</nav>
 </header>
 <script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="assets/js/loginCheck.js"></script>
 <script>
 	$(".navbar-toggler").on("click", () => {
 		let items = document.querySelectorAll(".item");

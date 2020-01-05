@@ -680,7 +680,6 @@ require "header.php";
 				f();
 			})([]);
 		</script>
-		<script src="/creativetimofficial/argon-design-system/blob/master/LICENSE.md/static/js/main.e43310d5.chunk.js"></script>
 		<script src="assets/js/index.js"></script>
 	</body>
 </html>

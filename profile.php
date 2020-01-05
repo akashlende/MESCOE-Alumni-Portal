@@ -344,6 +344,8 @@ require "header.php";
 		<script src="./assets/js/argon.js?v=1.1.0"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
 
