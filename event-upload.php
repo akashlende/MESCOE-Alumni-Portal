@@ -12,7 +12,7 @@
 			content="Start your development with a Design System for Bootstrap 4."
 		/>
 		<meta name="author" content="Creative Tim" />
-		<title>Event-Form</title>
+		<title>Event Details</title>
 		<!-- Favicon -->
 		<link href="assets/img/brand/favicon.png" rel="icon" type="image/png" />
 		<!-- Fonts -->
@@ -42,23 +42,37 @@ require 'header.php';
 			<section class="section section-lg">
 				<div class="container">
 					<div class="row">
+						<div class="col-md-12">
+							<p class="h3">Event Details</p>
+						</div>
+					</div>
+					<div class="row">
 						<div class="col-md-6">
 							<form id="form-submit">
 								<fieldset>
-									<legend>Event-Form</legend>
 									<div class="form-group">
-										<div class="input-group input-group-alternative">
+										<label class="col-form-label" for="eventName"
+											>Event Picture</label
+										>
+										<div class="custom-file">
 											<input
-												class="form-control"
+												class="custom-file-input"
 												type="file"
 												name="file"
 												id="file1"
 												required
+												accept="image/x-png, image/jpeg"
 											/>
+											<label class="custom-file-label" for="file1"
+												>Choose File</label
+											>
 										</div>
 									</div>
 									<div class="form-group">
-										<div class="input-group input-group-alternative">
+										<label class="col-form-label" for="eventName"
+											>Event Name</label
+										>
+										<div class="input-group">
 											<input
 												class="form-control"
 												type="text"
@@ -70,7 +84,10 @@ require 'header.php';
 										</div>
 									</div>
 									<div class="form-group">
-										<div class="input-group input-group-alternative">
+										<label class="col-form-label" for="eventName"
+											>Event Details</label
+										>
+										<div class="input-group ">
 											<textarea
 												class="form-control"
 												type="text"
@@ -83,7 +100,10 @@ require 'header.php';
 										</div>
 									</div>
 									<div class="form-group">
-										<div class="input-group input-group-alternative">
+										<label class="col-form-label" for="eventName"
+											>Start Date</label
+										>
+										<div class="input-group ">
 											<div class="input-group-prepend">
 												<span class="input-group-text"
 													><i class="far fa-calendar"></i
@@ -100,7 +120,10 @@ require 'header.php';
 										</div>
 									</div>
 									<div class="form-group">
-										<div class="input-group input-group-alternative">
+										<label class="col-form-label" for="eventName"
+											>End Date</label
+										>
+										<div class="input-group ">
 											<div class="input-group-prepend">
 												<span class="input-group-text"
 													><i class="far fa-calendar"></i
@@ -110,18 +133,20 @@ require 'header.php';
 												class="form-control datepicker"
 												name="end"
 												id="end1"
-												placeholder="End date"
+												placeholder="End Date"
 												type="text"
 												autocomplete="off"
 											/>
 										</div>
 									</div>
 									<div class="form-group">
-										<div class="input-group input-group-alternative">
+										<label class="col-form-label" for="eventName"
+											>Start Time</label
+										>
+										<div class="input-group ">
 											<div class="input-group-prepend">
 												<span class="input-group-text"
-													><i class="far fa-clock pr-2"></i
-												>							Start Time
+													><i class="far fa-clock pr-2"></i> Start Time
 												</span>
 											</div>
 											<input
@@ -134,10 +159,13 @@ require 'header.php';
 										</div>
 									</div>
 									<div class="form-group">
-										<div class="input-group input-group-alternative">
+										<label class="col-form-label" for="eventName"
+											>Duration</label
+										>
+										<div class="input-group ">
 											<div class="input-group-prepend">
 												<span class="input-group-text"
-													><i class="fa fa-map-pin"></i
+													><i class="fa fa-clock"></i
 												></span>
 											</div>
 											<input
@@ -145,15 +173,19 @@ require 'header.php';
 												name="dur"
 												id="dur1"
 												placeholder="Duration in hours"
-												type="number"
+												type="text"
+												pattern="[0-9]"
 											/>
 										</div>
 									</div>
 									<div class="form-group">
-										<div class="input-group input-group-alternative">
+										<label class="col-form-label" for="eventName"
+											>Event Location</label
+										>
+										<div class="input-group ">
 											<div class="input-group-prepend ">
 												<span class="input-group-text"
-													><i class="fa fa-map-pin"></i
+													><i class="fa fa-map-marker-alt"></i
 												></span>
 											</div>
 											<input
@@ -168,8 +200,8 @@ require 'header.php';
 										</div>
 									</div>
 									<div class="form-group">
-										<button class="btn btn-success">
-											Save Event
+										<button class="btn btn-primary">
+											Submit
 										</button>
 									</div>
 								</fieldset>

@@ -72,7 +72,7 @@ require "header.php";
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="name" class="col-form-label"
+										<label class="col-form-label"
 											>Profile Picture</label
 										>
 										<div class="custom-file">
@@ -96,7 +96,9 @@ require "header.php";
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="name" class="col-form-label">Full Name</label>
+										<label for="name" class="col-form-label"
+											>Full Name <span class="text-danger">*</span></label
+										>
 										<input
 											type="text"
 											class="form-control"
@@ -110,7 +112,9 @@ require "header.php";
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="email" class="col-form-label">E-Mail</label>
+										<label for="email" class="col-form-label"
+											>E-Mail <span class="text-danger">*</span></label
+										>
 										<input
 											type="email"
 											class="form-control"
@@ -124,7 +128,9 @@ require "header.php";
 							<div class="row">
 								<div class="col-md-3">
 									<div class="form-group">
-										<label for="country" class="col-form-label">Country</label>
+										<label for="country" class="col-form-label"
+											>Country <span class="text-danger">*</span></label
+										>
 										<select
 											name="country"
 											class="countries form-control"
@@ -137,7 +143,9 @@ require "header.php";
 								</div>
 								<div class="col-md-3">
 									<div class="form-group">
-										<label for="state" class="col-form-label">State</label>
+										<label for="state" class="col-form-label"
+											>State <span class="text-danger">*</span></label
+										>
 										<select
 											name="state"
 											class="states form-control"
@@ -150,7 +158,9 @@ require "header.php";
 								</div>
 								<div class="col-md-3">
 									<div class="form-group">
-										<label for="city" class="col-form-label">City</label>
+										<label for="city" class="col-form-label"
+											>City <span class="text-danger">*</span></label
+										>
 										<select
 											name="city"
 											class="cities form-control"
@@ -166,7 +176,8 @@ require "header.php";
 								<div class="col-md-3">
 									<div class="form-group">
 										<label for="year" class="col-form-label"
-											>Year of graduation</label
+											>Year of graduation
+											<span class="text-danger">*</span></label
 										>
 										<input
 											type="text"
@@ -182,7 +193,8 @@ require "header.php";
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="degree" class="col-form-label">
-											Degree from M.E.S.C.O.E.</label
+											Degree from M.E.S.C.O.E.
+											<span class="text-danger">*</span></label
 										>
 										<br />
 										<div class="row degree-row">

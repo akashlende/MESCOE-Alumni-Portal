@@ -34,31 +34,40 @@
 		/>
 	</head>
 	<body>
-<?php
+		<?php
 require "header.php";
 ?>
 		<main>
 			<section class="section section-lg">
-					<div class="container">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="h3">Alumni Meet Details</p>
+						</div>
+					</div>
 					<div class="row">
 						<div class="col-md-6">
 							<form id="gal_form">
 								<div class="form-group h6">
-									<label for="eventName">Album</label>
+									<label class="col-form-label" for="eventName"
+										>Album Name</label
+									>
 									<input
 										required
 										name="alb_name"
 										type="text"
-										class="form-control input-group input-group-alternative"
+										class="form-control input-group "
 										id="eventName"
 										aria-describedby="event-name"
 										placeholder="Please enter album name.."
 									/>
 								</div>
 								<div class="form-group">
-									<label for="eventDate">Event Date</label>
+									<label class="col-form-label" for="eventDate"
+										>Event Date</label
+									>
 
-									<div class="input-group input-group-alternative" id="eventDate">
+									<div class="input-group " id="eventDate">
 										<div class="input-group-prepend ">
 											<span class="input-group-text"
 												><i class="ni ni-calendar-grid-58"></i
@@ -75,14 +84,10 @@ require "header.php";
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="eventDescription"
-										>Please add event's Description</label
+									<label class="col-form-label" for="eventDescription"
+										>Event Description</label
 									>
-
-									<div class="input-group input-group input-group-alternative">
-										<div class="input-group-prepend ">
-											<span class="input-group-text"></span>
-										</div>
+									<div class="input-group input-group ">
 										<textarea
 											required
 											class="form-control"
@@ -95,32 +100,54 @@ require "header.php";
 									</div>
 									<br />
 									<div class="form-group">
-										<label>Choose Album Cover</label>
-										<div class="input-group input-group-alternative">
+										<label class="col-form-label">Album Cover</label>
+										<div class="custom-file">
 											<input
 												required
-												class="form-control"
+												class="custom-file-input"
 												type="file"
 												id="cover"
 												accept="image/x-png, image/jpeg"
 											/>
+											<label class="custom-file-label" for="cover"
+												>Choose File</label
+											>
 										</div>
 									</div>
 									<div class="form-group">
-										<label>Select Photos for album</label>
-										<div class="input-group input-group-alternative">
+										<label class="col-form-label"
+											>Select Photos for Album</label
+										>
+										<div class="custom-file">
 											<input
-												class="form-control"
 												type="file"
+												class="custom-file-input"
 												id="photos"
 												required
 												multiple
 												accept="image/x-png, image/jpeg"
 											/>
+											<label class="custom-file-label" for="photos"
+												>Choose Files</label
+											>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-form-label">Report PDF</label>
+										<div class="custom-file">
+											<input
+												type="file"
+												class="custom-file-input"
+												id="reportFile"
+												required
+												accept=".pdf"
+											/>
+											<label class="custom-file-label" for="reportFile"
+												>Choose File</label
+											>
 										</div>
 									</div>
 								</div>
-
 								<button type="submit" class="btn btn-primary">Submit</button>
 							</form>
 						</div>

@@ -24,7 +24,6 @@ async function fetchUsers() {
 	await database.ref("alumni/").on("value", snapshot => {
 		if (snapshot.val()) {
 			users = Object.values(snapshot.val());
-			console.log(users);
 			showUsers(users);
 			let locn = findGetParameter("location");
 			if (locn) {
@@ -70,11 +69,11 @@ function showUsers(users) {
 	}
 	for (let i = 0; i < users.length; i++) {
 		let card = document.getElementById(`alumni-${i + 1}`);
-		card.addEventListener("click", () => showUser(i));
+		card.addEventListener("click", () => showUser(users, i));
 	}
 }
 
-function showUser(i) {
+function showUser(users, i) {
 	const alumniModal = document.querySelector(".alumni-modal");
 	alumniModal.querySelector(".modal-title").innerHTML =
 		users[i].personal.fullName;
@@ -136,7 +135,6 @@ function searchUser() {
 			users[i].academics.degrees[0],
 			users[i].academics.departments[0]
 		];
-
 		if (
 			filters[j]
 				.toLowerCase()
@@ -155,8 +153,4 @@ function searchUser() {
 	}
 	// If not found
 	// TODO: Implement not found
-	for (let i = 0; i < tempUsers.length; i++) {
-		let card = document.getElementById(`alumni-${i + 1}`);
-		card.addEventListener("click", () => showUser(i));
-	}
 }

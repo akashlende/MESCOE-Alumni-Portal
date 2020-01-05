@@ -98,3 +98,14 @@ $("#start1").datepicker({
 $("#end1").datepicker({
 	format: "dd/mm/yyyy"
 });
+
+$("#file1").on("change", function() {
+	var fileName = $(this)
+		.val()
+		.split("\\")
+		.pop();
+	$(this)
+		.siblings(".custom-file-label")
+		.addClass("selected")
+		.html(fileName);
+});

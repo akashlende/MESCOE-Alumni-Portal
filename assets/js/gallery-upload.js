@@ -142,3 +142,31 @@ form.addEventListener("submit", function(e) {
 	e.preventDefault();
 	storeGallery(form, window.coverImage, photosArray);
 });
+
+$("#reportFile").on("change", function() {
+	var fileName = $(this)
+		.val()
+		.split("\\")
+		.pop();
+	$(this)
+		.siblings(".custom-file-label")
+		.addClass("selected")
+		.html(fileName);
+});
+$("#cover").on("change", function() {
+	var fileName = $(this)
+		.val()
+		.split("\\")
+		.pop();
+	$(this)
+		.siblings(".custom-file-label")
+		.addClass("selected")
+		.html(fileName);
+});
+$("#photos").on("change", function() {
+	var fileName = $(this)[0].files.length + " Files.";
+	$(this)
+		.siblings(".custom-file-label")
+		.addClass("selected")
+		.html(fileName);
+});
