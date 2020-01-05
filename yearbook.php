@@ -39,8 +39,8 @@
 		/>
 	</head>
 	<body>
-		<?php 
-	require "header.php";
+		<?php
+require "header.php";
 ?>
 		<main>
 			<section class="section section-lg">
@@ -234,7 +234,7 @@
 		<script src="./assets/js/argon.js?v=1.1.0"></script>
 		<script src="./assets/js/yearbook/yearbook.js" type="module"></script>
 		<script>
-		    document.querySelector('nav').classList.add('bg-default')
+			document.querySelector("nav").classList.add("bg-default");
 		</script>
 	</body>
 </html>

@@ -40,8 +40,8 @@
 
 	<body>
 		<header class="header-global">
-			<?php 
-	require "header.php";
+			<?php
+require "header.php";
 ?>
 		</header>
 		<main>
@@ -239,11 +239,9 @@
 				document.querySelector("#filter").value=1;
 				document.querySelector(".search-bar").value=locn;
 				searchUser();			}*/
-			
-
 		</script>
 		<script>
-		    document.querySelector('nav').classList.add('bg-default')
+			document.querySelector("nav").classList.add("bg-default");
 		</script>
 	</body>
 </html>

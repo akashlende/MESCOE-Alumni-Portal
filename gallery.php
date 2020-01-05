@@ -39,8 +39,8 @@
 
 	<body>
 		<header class="header-global">
-				<?php 
-	require "header.php";
+			<?php
+require "header.php";
 ?>
 		</header>
 		<main>
@@ -59,23 +59,22 @@
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-		<div class="position-relative">
-			<section class="section section-lg">
-				<div class="container">
-					<div class="col-md-12">
-						<p class="h3 mb-3">Gallery</p>
-
-					</div>
-					<div class="row justify-content-center">
-						<div class="col-lg-12">
-							<div class="row row-grid">
-								<!--    -->
+			<div class="position-relative">
+				<section class="section section-lg">
+					<div class="container">
+						<div class="col-md-12">
+							<p class="h3 mb-3">Gallery</p>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-lg-12">
+								<div class="row row-grid">
+									<!--    -->
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-		</div>
+				</section>
+			</div>
 		</main>
 		<!-- Core -->
 		<script src="./assets/vendor/jquery/jquery.min.js"></script>
@@ -91,7 +90,7 @@
 
 		<script src="assets/js/gallery.js" type="module"></script>
 		<script>
-		    document.querySelector('nav').classList.add('bg-default')
+			document.querySelector("nav").classList.add("bg-default");
 		</script>
 	</body>
 </html>

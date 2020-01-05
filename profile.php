@@ -40,8 +40,8 @@
 
 	<body>
 		<header class="header-global">
-			<?php 
-	require "header.php";
+			<?php
+require "header.php";
 ?>
 		</header>
 		<main>
@@ -336,8 +336,8 @@
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
 
 		<script src="./assets/js/profile/profile.js" type="module"></script>
-				<script>
-		    document.querySelector('nav').classList.add('bg-default')
+		<script>
+			document.querySelector("nav").classList.add("bg-default");
 		</script>
 	</body>
 </html>

@@ -39,8 +39,8 @@
 
 	<body>
 		<header class="header-global">
-				<?php 
-	require "header.php";
+			<?php
+require "header.php";
 ?>
 		</header>
 		<main>
@@ -64,7 +64,6 @@
 					<div class="container">
 						<div class="col-md-12">
 							<p class="h3 mb-3" id="Event-title"></p>
-
 						</div>
 						<div class="row justify-content-center">
 							<div class="col-lg-12">
@@ -82,14 +81,14 @@
 					max-height: 50%;
 				}*/
 				.img-responsive {
-				    max-height: calc(100vh - 120px);
-				    object-fit: contain;
+					max-height: calc(100vh - 120px);
+					object-fit: contain;
 				}
 				.modal {
-				    text-align:center;
+					text-align: center;
 				}
 				.modal-dialog {
-				    width: auto;
+					width: auto;
 				}
 			</style>
 			<div
@@ -105,15 +104,14 @@
 					role="document"
 				>
 					<div class="modal-content">
-						<div class="modal-body px-1 py-1" id="modal-pic" >
-							
-						</div>
+						<div class="modal-body px-1 py-1" id="modal-pic"></div>
 
 						<div class="modal-footer py-2" style="">
 							<button
 								type="button"
 								class="btn btn-link ml-auto text-primary"
-								data-dismiss="modal">
+								data-dismiss="modal"
+							>
 								Close
 							</button>
 						</div>
@@ -139,7 +137,7 @@
 
 		<script src="assets/js/gallery-events.js" type="module"></script>
 		<script>
-		    document.querySelector('nav').classList.add('bg-default')
+			document.querySelector("nav").classList.add("bg-default");
 		</script>
 	</body>
 </html>
