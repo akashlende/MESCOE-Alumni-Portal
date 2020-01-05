@@ -23,7 +23,7 @@
 		<!-- Icons -->
 		<link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet" />
 		<link
-			href="assets/vendor/font-awesome/css/font-awesome.min.css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css"
 			rel="stylesheet"
 		/>
 		<!-- Argon CSS -->
@@ -86,7 +86,7 @@ require 'header.php';
 										<div class="input-group input-group-alternative">
 											<div class="input-group-prepend">
 												<span class="input-group-text"
-													><i class="fa fa-calendar"></i
+													><i class="far fa-calendar"></i
 												></span>
 											</div>
 											<input
@@ -95,6 +95,7 @@ require 'header.php';
 												id="start1"
 												placeholder="Start Date"
 												type="text"
+												autocomplete="off"
 											/>
 										</div>
 									</div>
@@ -102,7 +103,7 @@ require 'header.php';
 										<div class="input-group input-group-alternative">
 											<div class="input-group-prepend">
 												<span class="input-group-text"
-													><i class="fa fa-calendar"></i
+													><i class="far fa-calendar"></i
 												></span>
 											</div>
 											<input
@@ -111,6 +112,7 @@ require 'header.php';
 												id="end1"
 												placeholder="End date"
 												type="text"
+												autocomplete="off"
 											/>
 										</div>
 									</div>
@@ -118,9 +120,9 @@ require 'header.php';
 										<div class="input-group input-group-alternative">
 											<div class="input-group-prepend">
 												<span class="input-group-text"
-													><i class="fa fa-user-clock"></i
-												></span>
-												<span class="input-group-text">Start Time</span>
+													><i class="far fa-clock pr-2"></i
+												>							Start Time
+												</span>
 											</div>
 											<input
 												class="form-control timepicker"
@@ -135,7 +137,7 @@ require 'header.php';
 										<div class="input-group input-group-alternative">
 											<div class="input-group-prepend">
 												<span class="input-group-text"
-													><i class="fas fa-stopwatch"></i
+													><i class="fa fa-map-pin"></i
 												></span>
 											</div>
 											<input
@@ -151,7 +153,7 @@ require 'header.php';
 										<div class="input-group input-group-alternative">
 											<div class="input-group-prepend ">
 												<span class="input-group-text"
-													><i class="fas fa-map-marker-alt"></i
+													><i class="fa fa-map-pin"></i
 												></span>
 											</div>
 											<input
@@ -160,7 +162,7 @@ require 'header.php';
 												id="eventname1"
 												name="location"
 												id="location1"
-												placeholder="location"
+												placeholder="Location"
 												required
 											/>
 										</div>
