@@ -72,6 +72,7 @@ require "header.php";
 											class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0"
 											data-toggle="modal"
 											data-target="#modal-form"
+											id="login-button"
 										>
 											<span class="btn-inner--text">LOGIN/REGISTER</span>
 										</button>
@@ -532,9 +533,9 @@ require "header.php";
 		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 		<script src="assets/js/argon.js?v=1.1.0"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-<?php 
-			require_once 'firebase_include.php';
-		?>
+<?php
+require_once 'firebase_include.php';
+?>
 		<script src="assets/js/remember.js"></script>
 		<script src="assets/js/loginScript.js"></script>
 		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -562,6 +563,11 @@ require "header.php";
 				.start();
 		</script>
 		<script>
+			if (parseInt(localStorage.getItem('loggedIn'))) {
+				document.querySelector("#login-button").classList.add("d-none");
+			} else {
+				document.querySelector("#login-button").classList.remove("d-none");
+			}
 			let poly = document.querySelector("#alumni-page");
 			const isOutOfViewport = function(elem) {
 				// Get element's bounding
