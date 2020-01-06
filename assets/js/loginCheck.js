@@ -6,7 +6,6 @@ console.log(ln);
 // 	$('#logout').click();
 // }
 
-
 if (!ln) {
 	document.querySelector(".login-item").classList.add("d-none");
 	document.querySelector(".forms-item").classList.add("d-none");
