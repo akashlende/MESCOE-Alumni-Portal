@@ -103,6 +103,9 @@ function showUser(users, i) {
 			alumniModal
 				.querySelector(`.${socialKeys[i]}`)
 				.setAttribute("target", "_blank");
+			alumniModal
+				.querySelector(`.${socialKeys[i]}`)
+				.classList.remove("d-none");	
 		} else {
 			alumniModal.querySelector(`.${socialKeys[i]}`).classList.add("d-none");
 		}
