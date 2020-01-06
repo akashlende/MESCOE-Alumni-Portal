@@ -35,7 +35,7 @@
 			rel="stylesheet"
 		/>
 		<!-- Firebase -->
-<?php 
+		<?php 
 			require_once 'firebase_include.php';
 		?>
 		<script type="text/javascript">
