@@ -1,6 +1,4 @@
-<?php
-require "header.php";
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -43,6 +41,10 @@ require "header.php";
 		<link href="assets/css/argon.css?v=1.1.0" rel="stylesheet" />
 	</head>
 	<body onscroll="changeNav()">
+		
+		<?php
+			require "header.php";
+		?>
 		<main>
 			<div class="position-relative">
 				<section class="section section-lg section-hero section-shaped">
@@ -514,7 +516,6 @@ require "header.php";
 			</div>
 			<?php require "login.php";?>
 		</main>
-		<script src="assets/vendor/jquery/jquery.min.js"></script>
 		<script src="assets/vendor/popper/popper.min.js"></script>
 		<script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
 		<script src="assets/vendor/headroom/headroom.min.js"></script>

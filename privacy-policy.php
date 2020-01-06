@@ -29,8 +29,8 @@
 		<div class="page">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<h1>Privacy Policy for Modern Education Soceity's College of Engineering Alumni Portal</h1>
+					<div class="col-md-12 text-justify">
+						<h1>Privacy Policy for Modern Education Society's College of Engineering Alumni Portal</h1>
 						<p>At 'MESCOE Alumni Portal', accessible from mescoepune.org, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by MESCOE Alumni Portal and how we use it.</p>
 						<p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 						<h2>Log Files</h2>

@@ -34,6 +34,7 @@
 			href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css"
 			rel="stylesheet"
 		/>
+
 		<!-- Firebase -->
 		<?php 
 			require_once 'firebase_include.php';

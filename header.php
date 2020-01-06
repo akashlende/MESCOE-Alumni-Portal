@@ -1,3 +1,11 @@
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/js/preloader.js"></script>
+<script src="assets/js/preloader-modernizer.min.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/preloader.css">
+
+<div id="loader-wrapper">
+	<div id="loader"></div>      
+</div>
 <header class="header-global">
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 		<div class="container-fluid px-md-5">
