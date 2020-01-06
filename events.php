@@ -132,9 +132,10 @@
 			</div>
 		</div>
 		<!-- firebase -->
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+		<?php 
+			require_once 'firebase_include.php';
+		?>
+		
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 		<script>
 			// Your web app's Firebase configuration

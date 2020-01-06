@@ -148,8 +148,9 @@
 	</nav>
 </header>
 <script src="assets/vendor/jquery/jquery.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<?php 
+			require_once 'firebase_include.php';
+		?>
 <script src="assets/js/loginCheck.js"></script>
 <script>
 	$(".navbar-toggler").on("click", () => {

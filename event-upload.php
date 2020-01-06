@@ -226,9 +226,10 @@ require 'header.php';
 		<!-- firebase -->
 		<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+		<?php 
+			require_once 'firebase_include.php';
+		?>
+		
 		<script>
 			document.querySelector("nav").classList.add("bg-default");
 		</script>

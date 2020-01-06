@@ -149,7 +149,7 @@ require "header.php";
 
 						<div
 							class="toast d-none"
-							style="opacity: 65%"
+							style="opacity: 100%"
 							role="alert"
 							aria-live="assertive"
 							aria-atomic="true"
@@ -532,10 +532,9 @@ require "header.php";
 		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 		<script src="assets/js/argon.js?v=1.1.0"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+<?php 
+			require_once 'firebase_include.php';
+		?>
 		<script src="assets/js/remember.js"></script>
 		<script src="assets/js/loginScript.js"></script>
 		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>

@@ -226,9 +226,9 @@ require "header.php";
 		<script src="./assets/vendor/onscreen/onscreen.min.js"></script>
 		<script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
 		<script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+		<?php 
+			require_once 'firebase_include.php';
+		?>
 
 		<!-- Argon JS -->
 		<script src="./assets/js/argon.js?v=1.1.0"></script>

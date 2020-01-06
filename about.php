@@ -120,6 +120,9 @@
 		<script src="./assets/vendor/onscreen/onscreen.min.js"></script>
 		<script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
 		<script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+		<?php 
+			require_once 'firebase_include.php';
+		?>
 		<!-- Argon JS -->
 		<script src="./assets/js/argon.js?v=1.1.0"></script>
 		<script>

@@ -1,6 +1,12 @@
 const ln = parseInt(localStorage.getItem("loggedIn"));
 console.log(ln);
 
+// const logout = parseInt(window.location.search)
+// if (logout) {
+// 	$('#logout').click();
+// }
+
+
 if (!ln) {
 	document.querySelector(".login-item").classList.add("d-none");
 	document.querySelector(".forms-item").classList.add("d-none");
@@ -13,7 +19,7 @@ if (!ln) {
 			window.location.pathname != "/AlumniPortalDev/about.php"
 		) {
 			alert("Please Login First!");
-			window.location.replace("/AlumniPortalDev/");
+			window.location.replace("/AlumniPortalDev/index.php");
 		}
 	}
 } else {
@@ -31,6 +37,7 @@ if (!ln) {
 const logoutButton = document.querySelector("#logout");
 
 logoutButton.addEventListener("click", () => {
+	// window.location.replace("/AlumniPortalDev/index.php?logout=1");
 	firebase
 		.auth()
 		.signOut()
