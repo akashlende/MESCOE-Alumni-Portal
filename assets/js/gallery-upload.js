@@ -75,7 +75,7 @@ function readmultifiles(files) {
 	readFile(0);
 }
 
-function storeGallery(form, coverImage, photos) {
+async function storeGallery(form, coverImage, photos) {
 	const formValues = {
 		album_name: form.elements["alb_name"].value,
 		event_date: form.elements["event_date"].value,
@@ -98,7 +98,9 @@ function storeGallery(form, coverImage, photos) {
 								snap.ref
 									.getDownloadURL()
 									.then(url => {
-										photoURLS.push(url);
+										window.setTimeout(() => {
+											photoURLS.push(url);
+										console.log(photoURLS)
 										formValues.photos = photoURLS;
 										database
 											.ref("gallery/")
@@ -110,6 +112,8 @@ function storeGallery(form, coverImage, photos) {
 											.catch(e => {
 												console.log(e);
 											});
+										}, 2000)
+										
 									})
 									.catch(e => {
 										console.log(e);

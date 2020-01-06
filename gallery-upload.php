@@ -139,7 +139,7 @@ require "header.php";
 												type="file"
 												class="custom-file-input"
 												id="reportFile"
-												required
+												
 												accept=".pdf"
 											/>
 											<label class="custom-file-label" for="reportFile"

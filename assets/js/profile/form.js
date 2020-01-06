@@ -62,7 +62,7 @@ export default function profileForm(dataURL) {
 							.then(url => {
 								alumni.personal.image = url;
 								database
-									.ref(`alumni/${fullName.replace(/ /g, "_")}`)
+									.ref(`alumni/${fullName.replace(/[ ]/g, "_")}`)
 									.set(alumni)
 									.then(snap => {
 										window.setTimeout(() => {
