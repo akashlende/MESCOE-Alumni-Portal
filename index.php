@@ -55,7 +55,7 @@ require "header.php";
 					</div>
 					<div
 						class="container shape-container d-flex align-items-center py-0"
-						style="height:85%"
+						style="height:30%"
 					>
 						<div class="col px-0">
 							<div class="row align-items-center justify-content-center">
