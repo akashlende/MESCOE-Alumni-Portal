@@ -236,3 +236,4 @@ require 'header.php';
 		<script src="assets/js/event-upload.js" type="module"></script>
 	</body>
 </html>
+<?php require_once "footer.php" ?>

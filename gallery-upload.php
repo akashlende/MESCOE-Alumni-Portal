@@ -193,3 +193,4 @@ require "header.php";
 		</script>
 	</body>
 </html>
+<?php require_once "footer.php" ?>

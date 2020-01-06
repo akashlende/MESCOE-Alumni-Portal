@@ -11,9 +11,9 @@ require "header.php";
 		/>
 		<meta
 			name="description"
-			content="Start your development with a Design System for Bootstrap 4."
+			content="Building a strong community of MESCOE Alumni."
 		/>
-		<meta name="author" content="Creative Tim" />
+		<meta name="author" content="DSC MESCOE" />
 		<title>MESCOE ALUMNI</title>
 		<style>
 			hr {
@@ -55,7 +55,7 @@ require "header.php";
 					</div>
 					<div
 						class="container shape-container d-flex align-items-center py-0"
-						style="height:30%"
+						style="height:85%"
 					>
 						<div class="col px-0">
 							<div class="row align-items-center justify-content-center">
@@ -472,7 +472,7 @@ require "header.php";
 					transition: color 0.2s;
 				}
 			</style>
-			<div class="mt-5 pt-5 pb-5 footer justify-content-center bg-default">
+			<div class="mt-5 pt-5 pb-1 footer justify-content-center bg-default">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-4 col-xs-12 about-company">
@@ -507,16 +507,6 @@ require "header.php";
 							<p>
 								Late Prin. V.K. Joag Path, Wadia College Campus, Bund Garden Rd,
 								Pune, Maharashtra 411001
-							</p>
-						</div>
-					</div>
-					<div class="row mt-5 text-center">
-						<div class="col copyright">
-							<p>
-								<medium class="text-white-50"
-									>&copy; 2019, Modern Education Society's College of
-									Engineering, Pune</medium
-								>
 							</p>
 						</div>
 					</div>
@@ -695,3 +685,4 @@ require_once 'firebase_include.php';
 		<script src="assets/js/index.js"></script>
 	</body>
 </html>
+<?php require_once "footer.php" ?>

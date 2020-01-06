@@ -248,3 +248,4 @@ require "header.php";
 		<script src="./assets/js/argon.js?v=1.1.0"></script>
 	</body>
 </html>
+<?php require_once "footer.php" ?>
