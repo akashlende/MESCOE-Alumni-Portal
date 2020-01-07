@@ -120,14 +120,24 @@
 		<script src="./assets/vendor/onscreen/onscreen.min.js"></script>
 		<script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
 		<script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-		<?php 
-			require_once 'firebase_include.php';
-		?>
+		<?php
+require_once 'firebase_include.php';
+?>
 		<!-- Argon JS -->
 		<script src="./assets/js/argon.js?v=1.1.0"></script>
 		<script>
+			const firebaseConfig = {
+				apiKey: "AIzaSyCBcqL0b8LqsURhdUOmmSBcntqXSI6uu7g",
+				authDomain: "mescoe-alumni.firebaseapp.com",
+				databaseURL: "https://mescoe-alumni.firebaseio.com",
+				projectId: "mescoe-alumni",
+				storageBucket: "mescoe-alumni.appspot.com",
+				messagingSenderId: "332958193506",
+				appId: "1:332958193506:web:b218c9102289cb36f0fe3b"
+			};
+			firebase.initializeApp(firebaseConfig);
 			document.querySelector("nav").classList.add("bg-default");
 		</script>
 	</body>
 </html>
-<?php require_once "footer.php" ?>
+<?php require_once "footer.php"?>
