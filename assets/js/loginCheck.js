@@ -1,5 +1,4 @@
 const ln = parseInt(localStorage.getItem("loggedIn"));
-console.log(ln);
 
 // const logout = parseInt(window.location.search)
 // if (logout) {

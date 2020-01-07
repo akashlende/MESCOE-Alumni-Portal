@@ -3,22 +3,12 @@ import dropdowns from "./dropdowns.js";
 import degrees from "./degrees.js";
 import profileForm from "./form.js";
 
-$(document).ready(() => {
-	const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
-	$(".upload-image").croppie("bind", {
-		url: loggedInUser.photoURL
-	});
-	document
-		.getElementById("name")
-		.setAttribute("value", loggedInUser.displayName);
-	document.getElementById("name").setAttribute("readonly", "readonly");
-	document
-		.getElementById("email")
-		.setAttribute(
-			"value",
-			loggedInUser.email == null ? "" : loggedInUser.email
-		);
-});
+const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+document.getElementById("name").setAttribute("value", loggedInUser.displayName);
+document.getElementById("name").setAttribute("readonly", "readonly");
+document
+	.getElementById("email")
+	.setAttribute("value", loggedInUser.email == null ? "" : loggedInUser.email);
 
 customElements.define("degree-card", DegreeCard);
 
@@ -71,7 +61,7 @@ rotateLeftButton.onclick = () => {
 };
 
 $(".upload-image").croppie({
-	url: "assets/img/user-default.png",
+	url: loggedInUser.photoURL,
 	enableExif: true,
 	viewport: {
 		width: 300,
@@ -87,8 +77,8 @@ $(".upload-image").croppie({
 $(".upload-image")
 	.croppie("result", {
 		type: "base64",
-		format: "png",
-		quality: 0.7,
+		format: "jpeg",
+		quality: 0.8,
 		circle: false
 	})
 	.then(d => {
@@ -98,21 +88,9 @@ $(".upload-image")
 function readURL(input) {
 	if (input.files && input.files[0]) {
 		var reader = new FileReader();
-		reader.onload = async function(e) {
-			$(".upload-image").croppie("destroy");
-			$(".upload-image").croppie({
-				url: e.target.result,
-				enableExif: true,
-				enableOrientation: true,
-				viewport: {
-					width: 300,
-					height: 300,
-					type: "circle"
-				},
-				boundary: {
-					width: 300,
-					height: 300
-				}
+		reader.onload = function(e) {
+			$(".upload-image").croppie("bind", {
+				url: e.target.result
 			});
 		};
 		reader.readAsDataURL(input.files[0]);

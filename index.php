@@ -56,8 +56,8 @@
 						<span class="span-50"></span> <span class="span-100"></span>
 					</div>
 					<div
-						class="container shape-container d-flex align-items-center py-0"
-						style="height:85%"
+						class="container shape-container d-flex align-items-center"
+						style="height:30%; margin-top: 5em;"
 					>
 						<div class="col px-0">
 							<div class="row align-items-center justify-content-center">
@@ -524,7 +524,7 @@
 		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 		<script src="assets/js/argon.js?v=1.1.0"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-<?php
+		<?php
 require_once 'firebase_include.php';
 ?>
 		<script src="assets/js/remember.js"></script>
@@ -554,7 +554,7 @@ require_once 'firebase_include.php';
 				.start();
 		</script>
 		<script>
-			if (parseInt(localStorage.getItem('loggedIn'))) {
+			if (parseInt(localStorage.getItem("loggedIn"))) {
 				document.querySelector("#login-button").classList.add("d-none");
 			} else {
 				document.querySelector("#login-button").classList.remove("d-none");
