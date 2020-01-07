@@ -36,9 +36,9 @@
 		/>
 
 		<!-- Firebase -->
-		<?php 
-			require_once 'firebase_include.php';
-		?>
+		<?php
+require_once 'firebase_include.php';
+?>
 		<script type="text/javascript">
 			const firebaseConfig = {
 				apiKey: "AIzaSyCBcqL0b8LqsURhdUOmmSBcntqXSI6uu7g",
@@ -249,4 +249,4 @@ require "header.php";
 		<script src="./assets/js/argon.js?v=1.1.0"></script>
 	</body>
 </html>
-<?php require_once "footer.php" ?>
+<?php require_once "footer.php"?>

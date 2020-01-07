@@ -54,7 +54,7 @@ export default function profileForm(dataURL) {
 			};
 			if (dataURL != null) {
 				storage
-					.child(`alumni/${fullName.replace(/[ ]/g, "_")}`)
+					.child(`alumni/${userEmail}`)
 					.putString(dataURL, "data_url")
 					.then(snapshot => {
 						snapshot.ref

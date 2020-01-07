@@ -5,7 +5,8 @@ import profileForm from "./form.js";
 
 const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 document.getElementById("name").setAttribute("value", loggedInUser.displayName);
-document.getElementById("name").setAttribute("readonly", "readonly");
+if (loggedInUser.email != null)
+	document.getElementById("email").setAttribute("readonly", "readonly");
 document
 	.getElementById("email")
 	.setAttribute("value", loggedInUser.email == null ? "" : loggedInUser.email);
@@ -104,6 +105,7 @@ $(".upload-image").on("update.croppie", async (e, cropData) => {
 		quality: 0.8,
 		circle: false
 	});
+	console.log(dataURL);
 	profileForm(dataURL);
 });
 
