@@ -27,6 +27,8 @@ export default function profileForm(dataURL) {
 			? degree2 != "S" && department2 != "S"
 			: false;
 
+		let hashedEmail = md5(userEmail);
+
 		if ((degreeDept1 || degreeDept2) && year.length == 4) {
 			let alumni;
 			alumni = {
@@ -54,7 +56,7 @@ export default function profileForm(dataURL) {
 			};
 			if (dataURL != null) {
 				storage
-					.child(`alumni/${userEmail}`)
+					.child(`alumni/${hashedEmail}`)
 					.putString(dataURL, "data_url")
 					.then(snapshot => {
 						snapshot.ref
@@ -62,7 +64,7 @@ export default function profileForm(dataURL) {
 							.then(url => {
 								alumni.personal.image = url;
 								database
-									.ref(`alumni/${fullName.replace(/[ ]/g, "_")}`)
+									.ref(`alumni/${hashedEmail}`)
 									.set(alumni)
 									.then(snap => {
 										window.setTimeout(() => {

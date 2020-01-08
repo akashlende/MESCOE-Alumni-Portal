@@ -343,9 +343,10 @@ require "header.php";
 		<!-- Argon JS -->
 		<script src="./assets/js/argon.js?v=1.1.0"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-		<?php 
-			require_once 'firebase_include.php';
-		?>
+		<script src="./assets/js/md5/md5.min.js"></script>
+		<?php
+require_once 'firebase_include.php';
+?>
 
 		<script src="./assets/js/profile/profile.js" type="module"></script>
 		<script>
@@ -353,4 +354,4 @@ require "header.php";
 		</script>
 	</body>
 </html>
-<?php require_once "footer.php" ?>
+<?php require_once "footer.php"?>
