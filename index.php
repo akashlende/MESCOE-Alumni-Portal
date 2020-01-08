@@ -56,8 +56,8 @@
 						<span class="span-50"></span> <span class="span-100"></span>
 					</div>
 					<div
-						class="container shape-container d-flex align-items-center"
-						style="height:30%; margin-top: 5em;"
+						class="container shape-container d-flex align-items-center py-0"
+						style="height:85%"
 					>
 						<div class="col px-0">
 							<div class="row align-items-center justify-content-center">
@@ -486,9 +486,9 @@
 							></iframe>
 						</div>
 						<div class="col-lg-4 col-xs-12 links">
-							<h4 class="mt-lg-0 mt-sm-3" style="color:#f5f5f5">Contact</h4>
-							<p class="mb-0"><i class="fa fa-phone mr-3"></i>(020) 26163831</p>
-							<p>
+							<h4 class="mt-lg-0 mt-sm-3 text-white">Contact</h4>
+							<p class="mb-0 text-white"><i class="fa fa-phone mr-3"></i>(020) 26163831</p>
+							<p class="text-white">
 								<i class="fa fa-envelope-o mr-3"></i>principal@mescoepune.org
 							</p>
 							<div class="row container mb-5">
@@ -505,8 +505,8 @@
 							</div>
 						</div>
 						<div class="col-lg-4 col-xs-12 location">
-							<h4 style="color:#f5f5f5" class="mt-lg-0 mt-sm-4">Address</h4>
-							<p>
+							<h4 class="mt-lg-0 mt-sm-4" style="color: #f5f5f5;">Address</h4>
+							<p class="text-white">
 								Late Prin. V.K. Joag Path, Wadia College Campus, Bund Garden Rd,
 								Pune, Maharashtra 411001
 							</p>
@@ -524,7 +524,7 @@
 		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 		<script src="assets/js/argon.js?v=1.1.0"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-		<?php
+<?php
 require_once 'firebase_include.php';
 ?>
 		<script src="assets/js/remember.js"></script>
@@ -554,7 +554,7 @@ require_once 'firebase_include.php';
 				.start();
 		</script>
 		<script>
-			if (parseInt(localStorage.getItem("loggedIn"))) {
+			if (parseInt(localStorage.getItem('loggedIn'))) {
 				document.querySelector("#login-button").classList.add("d-none");
 			} else {
 				document.querySelector("#login-button").classList.remove("d-none");
