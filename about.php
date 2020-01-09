@@ -43,13 +43,22 @@
 			</div>
 			<?php require "header.php";?>
 			<div class="row mt-3">
-				<div class="col-md-12 text-justify">
-					<p>
-						Modern Education Society was established in 1932, with motto "FOR
-						THE SPREAD OF LIGHT". The Modern Education Society's College of
-						Engineering, Pune was established in 1999 and conducts the following
-						courses leading to Bachelor's Degree in Engineering & Master Degree
-						in Engineering
+				<div class="col-md-12 text-justify" >
+					<p style="line-height: 1.8em" class="">
+						The Modern Education Society, Pune was established on 15th February, 1932, to meet the demand for education by the residents of the eastern part of the city of Poona. Due mainly to the efforts of its founder, Prin. V. K. Joag, and to the munificence of the Wadia brothers, Sir Cusrow Wadia and Sir Ness Wadia, the Modern Education Society came into being as a regular registered educational Society formally at a meeting of it’s founder members at the Cowasjee Dinshaw Library Hall. It was at this meeting that the First Senate of the Modern Education Society was formed and the Senate decided on the recommendations of it’s Finance Council and Academic Council to establish from June 1932, a college affiliated to a University in the Poona Suburban Area. Thus, came into being, the ‘Nowrosjee Wadia College’ named after the Late Mr. Nowrosjee Wadia, father of Sir Cusrow Wadia and Sir Ness Wadia. Today the seven Institutions of the Modern Education Society in Pune and Mumbai are well known all over India and abroad as institutions of excellence in education, sports and in extra-curricular activities and are most sought after as educational Institutions of excellence by students from all over India and several countries abroad.
+					</p>
+						<h3>Modern Education Society's College of Engineering</h3>
+					<p style="line-height: 1.8em" class="">
+						Modern Education Society was established in 1932, with motto "FOR THE SPREAD OF LIGHT".
+                        The Modern Education Society's College of Engineering, Pune was established in 1999 and conducts the following courses leading to Bachelor's Degree in Engineering & Master Degree in Engineering. <br><br>
+                        <b>Vision :</b> To Groom - Motivated, Environment friendly, Self-esteemed, Creative and Oriented Engineers. <br><br>
+						<b>Mission :</b> To Develop Industry Oriented Manpower to accept the challenges of Globalization by,
+						<ul class="">
+						  <li>  Promoting Value Education through motivated trained faculty</li>
+						  <li>  Maintaining conducive environment for education at affordable cost</li>
+						  <li>  Promoting Industry Institute interaction</li>
+						  <li>  Involving alumni.</li>
+						</ul>
 					</p>
 				</div>
 			</div>

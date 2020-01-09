@@ -7,7 +7,7 @@
 	<div id="loader"></div>
 </div>
 <header class="header-global">
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top pl-2 pr-1">
 		<div class="container-fluid px-md-5">
 			<a class="navbar-brand" href="index.php"
 				><img src="assets/img/brand/college_logo.png" class="mr-3" />
@@ -50,42 +50,32 @@
 					</div>
 				</div>
 				<ul class="navbar-nav ml-lg-auto">
-					<li class="nav-item forms-item">
-						<div class="dropdown">
-							<button
-								class="btn btn-flat dropdown-toggle text-white item"
-								type="button"
-								id="forms"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
-							>
-								FORMS
-							</button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="dropdown-item" href="gallery-upload.php">Gallery Upload</a>
-								<a class="dropdown-item" href="event-upload.php">Event Upload</a>
-							</div>
-						</div>
-					</li>
-					<li class="nav-item media-item">
-						<div class="dropdown">
-							<button
-								class="btn btn-flat dropdown-toggle text-white item"
-								type="button"
-								id="media"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
-							>
-								MEDIA
-							</button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="dropdown-item" href="gallery.php">Gallery</a>
-								<a class="dropdown-item" href="events.php">Events & Updates</a>
-							</div>
-						</div>
-					</li>
+
+		            <a href="gallery.php">
+		            	<li class="nav-item">
+		                    <button
+		                    class="btn btn-flat text-white"
+		                    type="button"
+		                    id="gallery"
+		                    >
+		                    GALLERY
+		                  </button>
+		                </li>
+		            </a>
+		            
+		            <a href="events.php">
+		            	<ul class="navbar-nav ml-lg-auto">
+		                  <li class="nav-item">
+		                      <button
+		                      class="btn btn-flat text-white"
+		                      type="button"
+		                      id="events-and-updates"
+		                      >
+		                      EVENTS & UPDATES
+		                    </button>
+		                  </li>
+		              </ul>
+		            </a>
 					<li class="nav-item batch-item">
 						<div class="dropdown">
 							<button
