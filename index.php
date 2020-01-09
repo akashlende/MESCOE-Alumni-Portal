@@ -104,7 +104,7 @@ require "header.php";
 									src="assets/img/1.jpg"
 									class="d-block ml-auto mr-auto"
 									alt="..."
-									style="height: 50em; width: 100%; opacity: 0.3;"
+									style="height: 50em; width: 100%; opacity: 0.3; object-fit:cover;"
 								/>
 							</div>
 							<div
@@ -115,7 +115,7 @@ require "header.php";
 									src="assets/img/2.jpg"
 									class="d-block ml-auto mr-auto"
 									alt="..."
-									style="height: 50em; width: 100%; opacity: 0.3;"
+									style="height: 50em; width: 100%; opacity: 0.3;object-fit:cover;"
 								/>
 							</div>
 							<div
@@ -126,7 +126,7 @@ require "header.php";
 									src="assets/img/MESCOE.jpg"
 									class="d-block ml-auto mr-auto"
 									alt="..."
-									style="height: 50em; width: 100%; opacity: 0.3;"
+									style="height: 50em; width: 100%; opacity: 0.3;object-fit:cover;"
 								/>
 							</div>
 						</div>
