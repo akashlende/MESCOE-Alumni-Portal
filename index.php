@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width,initial-scale=1,shrink-to-fit=no"
-		/>
-		<meta
-			name="description"
-			content="Building a strong community of MESCOE Alumni."
-		/>
-		<meta name="author" content="DSC MESCOE" />
+		<?php require_once 'meta-data.php'; ?>
 		<title>MESCOE ALUMNI</title>
 		<style>
 			hr {
@@ -27,7 +18,6 @@
 			type="text/css"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		/>
-		<link href="assets/img/brand/favicon.png" rel="icon" type="image/png" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
 			rel="stylesheet"

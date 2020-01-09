@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<?php require_once 'meta-data.php'; ?>
 		<link
 			rel="stylesheet"
 			type="text/css"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		/>
-		<link href="assets/img/brand/favicon.png" rel="icon" type="image/png" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
 			rel="stylesheet"
@@ -174,6 +171,7 @@
 		<script>
 			document.querySelector(".navbar").classList.add("bg-default");
 		</script>
+		<div style="height: 150px;"></div>
 	</body>
 </html>
 <?php require_once "footer.php" ?>

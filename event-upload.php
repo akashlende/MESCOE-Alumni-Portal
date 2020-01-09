@@ -1,20 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-
-		<meta
-			name="description"
-			content="Start your development with a Design System for Bootstrap 4."
-		/>
-		<meta name="author" content="Creative Tim" />
-		<title>Event Details</title>
-		<!-- Favicon -->
-		<link href="assets/img/brand/favicon.png" rel="icon" type="image/png" />
+		<?php require_once 'meta-data.php'; ?>
+		<title>Upload Event</title>
 		<!-- Fonts -->
 		<link
 			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
