@@ -2,7 +2,7 @@ const template = document.createElement("template");
 template.innerHTML = `
   <link
     type="text/css"
-    href="./assets/css/argon.css?v=1.1.0"
+    href="assets/css/argon.css?v=1.1.0"
     rel="stylesheet"
   />
   <button type="button" id="year-button" class="btn btn-outline-default rounded-pill mb-3 mt-3 ml-5 mr-5 px-5">Year</button>

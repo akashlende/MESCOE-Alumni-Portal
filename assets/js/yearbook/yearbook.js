@@ -235,7 +235,7 @@ function showAlumnus(users, dept) {
 		alumniCard.setAttribute(
 			"image",
 			users[i].personal.image == null
-				? `./assets/img/user-default.png`
+				? `assets/img/user-default.png`
 				: users[i].personal.image
 		);
 		alumniCard.setAttribute("year", users[i].personal.year);
@@ -292,7 +292,7 @@ function showUser(i) {
 		.setAttribute(
 			"src",
 			tempUsers[i].personal.image == null
-				? `./assets/img/user-default.png`
+				? `assets/img/user-default.png`
 				: tempUsers[i].personal.image
 		);
 	alumniModal.querySelector(

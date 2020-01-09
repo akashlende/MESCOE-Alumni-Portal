@@ -13,22 +13,22 @@
 		<meta name="author" content="Creative Tim" />
 		<title>About Us</title>
 		<!-- Favicon -->
-		<link href="./assets/img/brand/favicon.png" rel="icon" type="image/png" />
+		<link href="assets/img/brand/favicon.png" rel="icon" type="image/png" />
 		<!-- Fonts -->
 		<link
 			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
 			rel="stylesheet"
 		/>
 		<!-- Icons -->
-		<link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet" />
+		<link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet" />
 		<link
-			href="./assets/vendor/font-awesome/css/font-awesome.min.css"
+			href="assets/vendor/font-awesome/css/font-awesome.min.css"
 			rel="stylesheet"
 		/>
 		<!-- Argon CSS -->
 		<link
 			type="text/css"
-			href="./assets/css/argon.css?v=1.1.0"
+			href="assets/css/argon.css?v=1.1.0"
 			rel="stylesheet"
 		/>
 		<style>
@@ -240,19 +240,19 @@
 			document.querySelector(".navbar").classList.add("bg-default");
 		</script>
 		<!-- Core -->
-		<script src="./assets/vendor/jquery/jquery.min.js"></script>
-		<script src="./assets/vendor/popper/popper.min.js"></script>
-		<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-		<script src="./assets/vendor/headroom/headroom.min.js"></script>
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/popper/popper.min.js"></script>
+		<script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+		<script src="assets/vendor/headroom/headroom.min.js"></script>
 		<!-- Optional JS -->
-		<script src="./assets/vendor/onscreen/onscreen.min.js"></script>
-		<script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
-		<script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+		<script src="assets/vendor/onscreen/onscreen.min.js"></script>
+		<script src="assets/vendor/nouislider/js/nouislider.min.js"></script>
+		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 		<?php 
 			require_once 'firebase_include.php';
 		?>
 		<!-- Argon JS -->
-		<script src="./assets/js/argon.js?v=1.1.0"></script>
+		<script src="assets/js/argon.js?v=1.1.0"></script>
 		<script>
 			document.querySelector("nav").classList.add("bg-default");
 		</script>

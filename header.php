@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/preloader.css">
 
 <div id="loader-wrapper">
-	<div id="loader"></div>      
+	<div id="loader"></div>
 </div>
 <header class="header-global">
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -122,6 +122,7 @@
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 								<a class="dropdown-item" href="about.php">About Us</a>
 								<a class="dropdown-item" href="about.php#Contact">Contact</a>
+								<a class="dropdown-item" href="privacy-policy.php">Privacy Policy</a>
 							</div>
 						</div>
 					</li>
@@ -156,9 +157,9 @@
 	</nav>
 </header>
 <script src="assets/vendor/jquery/jquery.min.js"></script>
-<?php 
-			require_once 'firebase_include.php';
-		?>
+<?php
+require_once 'firebase_include.php';
+?>
 <script src="assets/js/loginCheck.js"></script>
 <script>
 	$(".navbar-toggler").on("click", () => {

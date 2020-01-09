@@ -15,7 +15,7 @@
 		<title>Yearbook</title>
 		<!-- Favicon -->
 		<link
-			href="./assets/img/brand/college_logo.png"
+			href="assets/img/brand/college_logo.png"
 			rel="icon"
 			type="image/png"
 		/>
@@ -25,16 +25,16 @@
 			rel="stylesheet"
 		/>
 		<!-- Icons -->
-		<link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet" />
+		<link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet" />
 		<link
-			href="./assets/vendor/font-awesome/css/font-awesome.min.css"
+			href="assets/vendor/font-awesome/css/font-awesome.min.css"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./assets/css/yearbook.css" />
+		<link rel="stylesheet" href="assets/css/yearbook.css" />
 		<!-- Argon CSS -->
 		<link
 			type="text/css"
-			href="./assets/css/argon.css?v=1.1.0"
+			href="assets/css/argon.css?v=1.1.0"
 			rel="stylesheet"
 		/>
 	</head>
@@ -146,7 +146,7 @@ require "header.php";
 									alt="image"
 									class="rounded-circle img-center shadow shadow-lg--hover user-image"
 									style="width: 100px; height: 100px; object-fit: cover;"
-									src="./assets/img/user-default.png"
+									src="assets/img/user-default.png"
 								/>
 							</div>
 							<div class="col-md-9">
@@ -218,21 +218,21 @@ require "header.php";
 		</main>
 
 		<!-- Core -->
-		<script src="./assets/vendor/jquery/jquery.min.js"></script>
-		<script src="./assets/vendor/popper/popper.min.js"></script>
-		<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-		<script src="./assets/vendor/headroom/headroom.min.js"></script>
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/popper/popper.min.js"></script>
+		<script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+		<script src="assets/vendor/headroom/headroom.min.js"></script>
 		<!-- Optional JS -->
-		<script src="./assets/vendor/onscreen/onscreen.min.js"></script>
-		<script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
-		<script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+		<script src="assets/vendor/onscreen/onscreen.min.js"></script>
+		<script src="assets/vendor/nouislider/js/nouislider.min.js"></script>
+		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 		<?php 
 			require_once 'firebase_include.php';
 		?>
 
 		<!-- Argon JS -->
-		<script src="./assets/js/argon.js?v=1.1.0"></script>
-		<script src="./assets/js/yearbook/yearbook.js" type="module"></script>
+		<script src="assets/js/argon.js?v=1.1.0"></script>
+		<script src="assets/js/yearbook/yearbook.js" type="module"></script>
 		<script>
 			document.querySelector("nav").classList.add("bg-default");
 		</script>

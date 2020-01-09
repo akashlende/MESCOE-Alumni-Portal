@@ -13,7 +13,7 @@
 		/>
 		<link
 			type="text/css"
-			href="./assets/css/argon.css?v=1.1.0"
+			href="assets/css/argon.css?v=1.1.0"
 			rel="stylesheet"
 		/>
 		<!-- Fonts -->
@@ -157,17 +157,17 @@ require "header.php";
 		<!-- JS -->
 		<script src="assets/js/jobs.js"></script>
 		<!-- Core -->
-		<script src="./assets/vendor/jquery/jquery.min.js"></script>
-		<script src="./assets/vendor/popper/popper.min.js"></script>
-		<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-		<script src="./assets/vendor/headroom/headroom.min.js"></script>
-		<script src="./assets/js/croppie/croppie.min.js"></script>
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/popper/popper.min.js"></script>
+		<script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+		<script src="assets/vendor/headroom/headroom.min.js"></script>
+		<script src="assets/js/croppie/croppie.min.js"></script>
 		<!-- Optional JS -->
-		<script src="./assets/vendor/onscreen/onscreen.min.js"></script>
-		<script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
-		<script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+		<script src="assets/vendor/onscreen/onscreen.min.js"></script>
+		<script src="assets/vendor/nouislider/js/nouislider.min.js"></script>
+		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 		<!-- Argon JS -->
-		<script src="./assets/js/argon.js?v=1.1.0"></script>
+		<script src="assets/js/argon.js?v=1.1.0"></script>
 		<script>
 			document.querySelector(".navbar").classList.add("bg-default");
 		</script>

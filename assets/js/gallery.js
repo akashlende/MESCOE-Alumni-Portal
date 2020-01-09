@@ -25,7 +25,7 @@ function showEvents(events) {
 		eventCard.setAttribute(
 			"image",
 			events[i].cover == null
-				? `./assets/img/gallery-default.svg`
+				? `assets/img/gallery-default.svg`
 				: events[i].cover
 		);
 		eventCard.setAttribute("year", events[i].event_date);

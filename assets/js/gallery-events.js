@@ -41,7 +41,7 @@ function showPhotos(photos) {
 		let photoCard = document.createElement("photo-card");
 		photoCard.setAttribute(
 			"image",
-			photos[i] == null ? `./assets/img/gallery-default.png` : photos[i]
+			photos[i] == null ? `assets/img/gallery-default.png` : photos[i]
 		);
 		photoCard.setAttribute("id", `photo-${i + 1}`);
 		container.appendChild(photoCard);
@@ -63,7 +63,7 @@ function showPhotoModal(photo, i, eventId) {
 	document.getElementById("modal-pic").innerHTML = `<img src="
 			${
 				photos[eventId - 1].photos[i] == "undefined"
-					? "./assets/img/gallery-default.png"
+					? "assets/img/gallery-default.png"
 					: photos[eventId - 1].photos[i]
 			}" 
 			class="img-responsive" width="100%"

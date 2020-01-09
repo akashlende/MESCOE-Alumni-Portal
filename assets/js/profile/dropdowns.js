@@ -4,7 +4,7 @@ let cityOptions = [];
 
 export default function dropdowns() {
 	// Fill Country
-	$.getJSON("./assets/json/countries.json", data => {
+	$.getJSON("assets/json/countries.json", data => {
 		countryOptions = data.countries;
 		countryOptions.forEach(country => {
 			let opt = document.createElement("option");
@@ -42,7 +42,7 @@ export default function dropdowns() {
 	};
 
 	function fillCities(id) {
-		$.getJSON("./assets/json/cities.json", data => {
+		$.getJSON("assets/json/cities.json", data => {
 			cityOptions = data.cities;
 			cityOptions.forEach(city => {
 				if (city.state_id == id) {
@@ -56,7 +56,7 @@ export default function dropdowns() {
 		});
 	}
 	function fillStates(id) {
-		$.getJSON("./assets/json/states.json", data => {
+		$.getJSON("assets/json/states.json", data => {
 			stateOptions = data.states;
 			stateOptions.forEach(state => {
 				if (state.country_id == id) {

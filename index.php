@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -41,252 +40,239 @@
 		<link href="assets/css/argon.css?v=1.1.0" rel="stylesheet" />
 	</head>
 	<body onscroll="changeNav()">
-		
 		<?php
-			require "header.php";
-		?>
+require "header.php";
+?>
 		<main>
 			<div class="position-relative">
-				<section class="section section-lg section-hero section-shaped">
-					<div class="shape shape-style-1 shape-primary">
+				<div>
+					<div
+						id="carouselExampleIndicators"
+						class="carousel slide"
+						data-ride="carousel"
+						style=" opacity: 1;"
+					>
+						<ol class="carousel-indicators">
+							<li
+								data-target="#carouselExampleIndicators"
+								data-slide-to="0"
+								class="active"
+							></li>
+							<li
+								data-target="#carouselExampleIndicators"
+								data-slide-to="1"
+							></li>
+							<li
+								data-target="#carouselExampleIndicators"
+								data-slide-to="2"
+							></li>
+						</ol>
+						<div class="carousel-inner">
+							<div
+								class="col-md-12 d-flex align-items-center"
+								style="height:100%; width:100%; background-color: transparent; position: absolute; z-index: 10;"
+							>
+								<div class="col px-0">
+									<div class="row align-items-center justify-content-center">
+										<div class="col-md-6 text-center">
+											<h1 class="text-white" id="alumni-page">
+												Alumni Association of MESCOE
+											</h1>
+											<p id="hero" class="lead text-white">
+												Building a strong community!
+											</p>
+											<div class="btn-wrapper mt-5">
+												<button
+													type="button"
+													class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0"
+													data-toggle="modal"
+													data-target="#modal-form"
+													id="login-button"
+												>
+													<span class="btn-inner--text">LOGIN/REGISTER</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div
+								class="carousel-item active"
+								style="height: 50em;background-color: black;"
+							>
+								<img
+									src="assets/img/1.jpg"
+									class="d-block ml-auto mr-auto"
+									alt="..."
+									style="height: 50em; width: 100%; opacity: 0.3;"
+								/>
+							</div>
+							<div
+								class="carousel-item"
+								style="height: 50em;background-color: black;"
+							>
+								<img
+									src="assets/img/2.jpg"
+									class="d-block ml-auto mr-auto"
+									alt="..."
+									style="height: 50em; width: 100%; opacity: 0.3;"
+								/>
+							</div>
+							<div
+								class="carousel-item text-center"
+								style="height: 50em;background-color: black;"
+							>
+								<img
+									src="assets/img/MESCOE.jpg"
+									class="d-block ml-auto mr-auto"
+									alt="..."
+									style="height: 50em; width: 100%; opacity: 0.3;"
+								/>
+							</div>
+						</div>
+						<a
+							class="carousel-control-prev"
+							href="#carouselExampleIndicators"
+							role="button"
+							data-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a
+							class="carousel-control-next"
+							href="#carouselExampleIndicators"
+							role="button"
+							data-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="sr-only">Next</span>
+						</a>
+						<div
+							class="pl-2"
+							style="position: absolute; z-index: 5; bottom: 120px;"
+						>
+							<div
+								class="toast d-none"
+								style="opacity: 100%"
+								role="alert"
+								aria-live="assertive"
+								aria-atomic="true"
+								id="toast-1"
+							>
+								<div class="toast-header">
+									<i
+										class="fa fa-bell text-default pr-2"
+										aria-hidden="true"
+									></i>
+									<strong class="mr-auto" id="eventnamestack1"
+										>Alumni Meet 2k19</strong
+									>
+									<small class="text-muted pl-2" id="datestack1"
+										>11th January, 2019</small
+									>
+									<button
+										type="button"
+										class="ml-2 mb-1 close"
+										onclick="document.getElementById('toast-1').classList.add('d-none');
+						    	setTimeout(()=>{
+						    		document.getElementById('toast-1').classList.remove('d-none');
+						    	},20000);"
+									>
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="toast-body text-decoration-none" id="toast-body-1">
+									<p id="detailsstack1">Gathering the MESCOE alumni.</p>
+								</div>
+							</div>
+							<div
+								class="toast d-none"
+								style="opacity: 100%"
+								role="alert"
+								aria-live="assertive"
+								aria-atomic="true"
+								id="toast-2"
+							>
+								<div class="toast-header">
+									<i
+										class="fa fa-bell text-default pr-2"
+										aria-hidden="true"
+									></i>
+									<strong class="mr-auto" id="eventnamestack2"
+										>Alumni Meet 2k19</strong
+									>
+									<small class="text-muted pl-2" id="datestack2"
+										>11th January, 2019</small
+									>
+									<button
+										type="button"
+										class="ml-2 mb-1 close"
+										onclick="document.getElementById('toast-2').classList.add('d-none');
+						    	setTimeout(()=>{
+						    		document.getElementById('toast-2').classList.remove('d-none');
+						    	},20000);"
+									>
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="toast-body text-decoration-none" id="toast-body-1">
+									<p id="detailsstack2">Gathering the MESCOE alumni.</p>
+								</div>
+							</div>
+
+							<div
+								class="toast d-none"
+								style="opacity: 100%"
+								role="alert"
+								aria-live="assertive"
+								aria-atomic="true"
+								id="toast-3"
+							>
+								<div class="toast-header">
+									<i
+										class="fa fa-bell text-default pr-2"
+										aria-hidden="true"
+									></i>
+									<strong class="mr-auto" id="eventnamestack3">Hashcode</strong>
+									<small id="datestack3">February</small>
+									<button
+										type="button"
+										class="ml-2 mb-1 close"
+										onclick="let toastNo=2;
+						    	document.getElementById(`toast-3`).classList.add('d-none');
+						    	setTimeout(()=>{
+						    		document.getElementById(`toast-3`).classList.remove('d-none');
+						    	},20000);"
+									>
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="toast-body">
+									<p id="detailsstack3">
+										Event by Developer Students Club. <br />*Venue and Date are
+										subject to change.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="shape shape-style-1 shape-primary">
 						<span class="span-150"></span> <span class="span-50"></span>
 						<span class="span-50"></span> <span class="span-75"></span>
 						<span class="span-100"></span> <span class="span-75"></span>
 						<span class="span-50"></span> <span class="span-100"></span>
 						<span class="span-50"></span> <span class="span-100"></span>
-					</div>
-					<div
-						class="container shape-container d-flex align-items-center py-0"
-						style="height:85%"
-					>
-						<div class="col px-0">
-							<div class="row align-items-center justify-content-center">
-								<div class="col-lg-6 text-center">
-									<h1 class="text-white" id="alumni-page">
-										Alumni Association of MESCOE
-									</h1>
-									<p id="hero" class="lead text-white">
-										Building a strong community!
-									</p>
-									<div class="btn-wrapper mt-5">
-										<button
-											type="button"
-											class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0"
-											data-toggle="modal"
-											data-target="#modal-form"
-											id="login-button"
-										>
-											<span class="btn-inner--text">LOGIN/REGISTER</span>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div
-						class="pl-2"
-						style="position: absolute; z-index: 5; bottom: 120px;"
-					>
-						<div
-							class="toast d-none"
-							style="opacity: 100%"
-							role="alert"
-							aria-live="assertive"
-							aria-atomic="true"
-							id="toast-1"
-						>
-							<div class="toast-header">
-								<i class="fa fa-bell text-default pr-2" aria-hidden="true"></i>
-								<strong class="mr-auto" id="eventnamestack1"
-									>Alumni Meet 2k19</strong
-								>
-								<small class="text-muted pl-2" id="datestack1"
-									>11th January, 2019</small
-								>
-								<button
-									type="button"
-									class="ml-2 mb-1 close"
-									onclick="document.getElementById('toast-1').classList.add('d-none');
-						    	setTimeout(()=>{
-						    		document.getElementById('toast-1').classList.remove('d-none');
-						    	},20000);"
-								>
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="toast-body text-decoration-none" id="toast-body-1">
-								<p id="detailsstack1">Gathering the MESCOE alumni.</p>
-							</div>
-						</div>
-						<div
-							class="toast d-none"
-							style="opacity: 100%"
-							role="alert"
-							aria-live="assertive"
-							aria-atomic="true"
-							id="toast-2"
-						>
-							<div class="toast-header">
-								<i class="fa fa-bell text-default pr-2" aria-hidden="true"></i>
-								<strong class="mr-auto" id="eventnamestack2"
-									>Alumni Meet 2k19</strong
-								>
-								<small class="text-muted pl-2" id="datestack2"
-									>11th January, 2019</small
-								>
-								<button
-									type="button"
-									class="ml-2 mb-1 close"
-									onclick="document.getElementById('toast-2').classList.add('d-none');
-						    	setTimeout(()=>{
-						    		document.getElementById('toast-2').classList.remove('d-none');
-						    	},20000);"
-								>
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="toast-body text-decoration-none" id="toast-body-1">
-								<p id="detailsstack2">Gathering the MESCOE alumni.</p>
-							</div>
-						</div>
-
-						<div
-							class="toast d-none"
-							style="opacity: 100%"
-							role="alert"
-							aria-live="assertive"
-							aria-atomic="true"
-							id="toast-3"
-						>
-							<div class="toast-header">
-								<i class="fa fa-bell text-default pr-2" aria-hidden="true"></i>
-								<strong class="mr-auto" id="eventnamestack3">Hashcode</strong>
-								<small id="datestack3">February</small>
-								<button
-									type="button"
-									class="ml-2 mb-1 close"
-									onclick="let toastNo=2;
-						    	document.getElementById(`toast-3`).classList.add('d-none');
-						    	setTimeout(()=>{
-						    		document.getElementById(`toast-3`).classList.remove('d-none');
-						    	},20000);"
-								>
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="toast-body">
-								<p id="detailsstack3">
-									Event by Developer Students Club. <br />*Venue and Date are
-									subject to change.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="separator separator-bottom separator-skew zindex-100">
-						<svg
-							x="0"
-							y="0"
-							viewBox="0 0 2560 100"
-							preserveAspectRatio="none"
-							version="1.1"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<polygon
-								class="fill-white"
-								id="separator-polygon"
-								points="2560 0 2560 100 0 100"
-								onscroll='console.log("SCROLL")'
-							></polygon>
-						</svg>
-					</div>
-				</section>
-				<section class="section section-lg" style="padding-top:5rem">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="text-center mb-3">
-								<h2 class="text-black">GALLERY</h2>
-							</div>
-							<div class="col-md-12">
-								<div
-									id="carouselExampleIndicators"
-									class="carousel slide"
-									data-ride="carousel"
-								>
-									<ol class="carousel-indicators">
-										<li
-											data-target="#carouselExampleIndicators"
-											data-slide-to="0"
-											class="active"
-										></li>
-										<li
-											data-target="#carouselExampleIndicators"
-											data-slide-to="1"
-										></li>
-										<li
-											data-target="#carouselExampleIndicators"
-											data-slide-to="2"
-										></li>
-									</ol>
-									<div class="carousel-inner">
-										<div class="carousel-item active" style="height: 30em;">
-											<img
-												src="assets/img/1.jpg"
-												class="d-block ml-auto mr-auto"
-												alt="..."
-												style="height: 30em; width: fit-content;"
-											/>
-										</div>
-										<div class="carousel-item" style="height: 30em;">
-											<img
-												src="assets/img/2.jpg"
-												class="d-block ml-auto mr-auto"
-												alt="..."
-												style="height: 30em; width: fit-content;"
-											/>
-										</div>
-										<div
-											class="carousel-item text-center"
-											style="height: 30em;"
-										>
-											<img
-												src="assets/img/MESCOE.jpg"
-												class="d-block ml-auto mr-auto"
-												alt="..."
-												style="height: 30em;"
-											/>
-										</div>
-									</div>
-									<a
-										class="carousel-control-prev"
-										href="#carouselExampleIndicators"
-										role="button"
-										data-slide="prev"
-									>
-										<span
-											class="carousel-control-prev-icon"
-											aria-hidden="true"
-										></span>
-										<span class="sr-only">Previous</span>
-									</a>
-									<a
-										class="carousel-control-next"
-										href="#carouselExampleIndicators"
-										role="button"
-										data-slide="next"
-									>
-										<span
-											class="carousel-control-next-icon"
-											aria-hidden="true"
-										></span>
-										<span class="sr-only">Next</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+					</div> -->
+				</div>
 			</div>
-			<div class="container">
+			<div class="container mt-5">
 				<p class="h2 text-center mb-3">EVENTS & NEWS</p>
 				<div class="row ">
 					<div class="col-lg-4 mb-4 col-md-12 d-none" id="noeve1">
@@ -487,7 +473,9 @@
 						</div>
 						<div class="col-lg-4 col-xs-12 links">
 							<h4 class="mt-lg-0 mt-sm-3 text-white">Contact</h4>
-							<p class="mb-0 text-white"><i class="fa fa-phone mr-3"></i>(020) 26163831</p>
+							<p class="mb-0 text-white">
+								<i class="fa fa-phone mr-3"></i>(020) 26163831
+							</p>
 							<p class="text-white">
 								<i class="fa fa-envelope-o mr-3"></i>principal@mescoepune.org
 							</p>
@@ -524,7 +512,7 @@
 		<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 		<script src="assets/js/argon.js?v=1.1.0"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-<?php
+		<?php
 require_once 'firebase_include.php';
 ?>
 		<script src="assets/js/remember.js"></script>
@@ -554,7 +542,7 @@ require_once 'firebase_include.php';
 				.start();
 		</script>
 		<script>
-			if (parseInt(localStorage.getItem('loggedIn'))) {
+			if (parseInt(localStorage.getItem("loggedIn"))) {
 				document.querySelector("#login-button").classList.add("d-none");
 			} else {
 				document.querySelector("#login-button").classList.remove("d-none");
@@ -686,4 +674,4 @@ require_once 'firebase_include.php';
 		<script src="assets/js/index.js"></script>
 	</body>
 </html>
-<?php require_once "footer.php" ?>
+<?php require_once "footer.php"?>

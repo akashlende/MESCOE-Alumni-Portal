@@ -1,28 +1,26 @@
 const ln = parseInt(localStorage.getItem("loggedIn"));
 
-// const logout = parseInt(window.location.search)
-// if (logout) {
-// 	$('#logout').click();
-// }
+const loginItem = document.querySelector(".login-item");
 
 if (!ln) {
-	document.querySelector(".login-item").classList.add("d-none");
-	document.querySelector(".forms-item").classList.add("d-none");
-	document.querySelector(".media-item").classList.add("d-none");
-	document.querySelector(".batch-item").classList.add("d-none");
+	// document.querySelector(".login-item").classList.add("d-none");
+	// document.querySelector(".forms-item").classList.add("d-none");
+	// document.querySelector(".media-item").classList.add("d-none");
+	// document.querySelector(".batch-item").classList.add("d-none");
+	loginItem.classList.add("d-none");
 
-	if (window.location.pathname != "/AlumniPortalDev/") {
+	if (window.location.pathname != "/alumni/") {
 		if (
-			window.location.pathname != "/AlumniPortalDev/index.php" &&
-			window.location.pathname != "/AlumniPortalDev/about.php"
+			window.location.pathname != "/alumni/index.php" &&
+			window.location.pathname != "/alumni/about.php" &&
+			window.location.pathname != "/alumni/privacy-policy.php"
 		) {
 			alert("Please Login First!");
-			window.location.replace("/AlumniPortalDev/index.php");
+			window.location.replace("/alumni/index.php");
 		}
 	}
 } else {
 	document.querySelector(".login-item").classList.remove("d-none");
-	const loginItem = document.querySelector(".login-item");
 	const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 	loginItem
 		.querySelector("#profile-image")
@@ -35,7 +33,6 @@ if (!ln) {
 const logoutButton = document.querySelector("#logout");
 
 logoutButton.addEventListener("click", () => {
-	// window.location.replace("/AlumniPortalDev/index.php?logout=1");
 	firebase
 		.auth()
 		.signOut()
