@@ -51,31 +51,25 @@
 				</div>
 				<ul class="navbar-nav ml-lg-auto">
 
-		            <a href="gallery.php">
-		            	<li class="nav-item">
-		                    <button
-		                    class="btn btn-flat text-white item"
-		                    type="button"
-		                    id="gallery"
-		                    >
-		                    GALLERY
-		                  </button>
-		                </li>
-		            </a>
-
-		            <a href="events.php">
-		            	<ul class="navbar-nav ml-lg-auto">
-		                  <li class="nav-item">
-		                      <button
-		                      class="btn btn-flat text-white item "
-		                      type="button"
-		                      id="events-and-updates"
-		                      >
-		                      EVENTS & UPDATES
-		                    </button>
-		                  </li>
-		              </ul>
-		            </a>
+		            
+		            <li class="nav-item batch-item">
+						<div class="dropdown">
+							<button
+								class="btn btn-flat dropdown-toggle text-white item"
+								type="button"
+								id="batchmates"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Events & Updates
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="events.php">Events</a>
+								<a class="dropdown-item" href="gallery.php">Gallery</a>
+							</div>
+						</div>
+					</li>
 					<li class="nav-item batch-item">
 						<div class="dropdown">
 							<button
@@ -97,6 +91,25 @@
 								<a class="dropdown-item" href="notable-alumni.php"
 									>Notable Alumni</a
 								>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item batch-item">
+						<div class="dropdown">
+							<button
+								class="btn btn-flat dropdown-toggle text-white item"
+								type="button"
+								id="batchmates"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Career Corner
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="job.php">Jobs</a>
+								<a class="dropdown-item" href="internship.php">Internships</a>
+								<a class="dropdown-item" href="mentor.php">Be a Mentor</a>
 							</div>
 						</div>
 					</li>

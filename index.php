@@ -113,6 +113,23 @@ require "header.php";
 								/>
 							</div>
 						</div>
+						<a
+							class="carousel-control-prev"
+							href="#carouselExampleIndicators"
+							role="button"
+							data-slide="prev"
+						>
+							
+						</a>
+						<a
+							class="carousel-control-next"
+							href="#carouselExampleIndicators"
+							role="button"
+							data-slide="next"
+						>
+							
+						</a>
+
 						<div
 							class="pl-2"
 							style="position: absolute; z-index: 11; bottom: 120px;"

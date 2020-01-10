@@ -5,14 +5,14 @@ const loginItem = document.querySelector(".login-item");
 if (!ln) {
 	loginItem.classList.add("d-none");
 
-	if (window.location.pathname != "/AlumniPortalDev/") {
+	if (window.location.pathname != "/alumni/") {
 		if (
-			window.location.pathname != "/AlumniPortalDev/index.php" &&
-			window.location.pathname != "/AlumniPortalDev/about.php" &&
-			window.location.pathname != "/AlumniPortalDev/privacy-policy.php"
+			window.location.pathname != "/alumni/index.php" &&
+			window.location.pathname != "/alumni/about.php" &&
+			window.location.pathname != "/alumni/privacy-policy.php"
 		) {
 			alert("Please Login First!");
-			window.location.replace("/AlumniPortalDev/index.php");
+			window.location.replace("/alumni/index.php");
 		}
 	}
 } else {
