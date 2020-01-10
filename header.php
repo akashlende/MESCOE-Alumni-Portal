@@ -94,6 +94,9 @@
 								<a class="dropdown-item" href="nearby-alumni.php"
 									>Nearby Alumni</a
 								>
+								<a class="dropdown-item" href="nearby-alumni.php"
+									>Notable Alumni</a
+								>
 							</div>
 						</div>
 					</li>
