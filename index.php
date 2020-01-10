@@ -48,14 +48,7 @@ require "header.php";
 								data-slide-to="0"
 								class="active"
 							></li>
-							<li
-								data-target="#carouselExampleIndicators"
-								data-slide-to="1"
-							></li>
-							<li
-								data-target="#carouselExampleIndicators"
-								data-slide-to="2"
-							></li>
+							
 						</ol>
 						<div class="carousel-inner">
 							<div
@@ -120,33 +113,9 @@ require "header.php";
 								/>
 							</div>
 						</div>
-						<a
-							class="carousel-control-prev"
-							href="#carouselExampleIndicators"
-							role="button"
-							data-slide="prev"
-						>
-							<span
-								class="carousel-control-prev-icon"
-								aria-hidden="true"
-							></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a
-							class="carousel-control-next"
-							href="#carouselExampleIndicators"
-							role="button"
-							data-slide="next"
-						>
-							<span
-								class="carousel-control-next-icon"
-								aria-hidden="true"
-							></span>
-							<span class="sr-only">Next</span>
-						</a>
 						<div
 							class="pl-2"
-							style="position: absolute; z-index: 5; bottom: 120px;"
+							style="position: absolute; z-index: 11; bottom: 120px;"
 						>
 							<div
 								class="toast d-none"
@@ -494,6 +463,7 @@ require "header.php";
 			</div>
 			<?php require "login.php";?>
 		</main>
+		
 		<script src="assets/vendor/popper/popper.min.js"></script>
 		<script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
 		<script src="assets/vendor/headroom/headroom.min.js"></script>
@@ -664,4 +634,15 @@ require_once 'firebase_include.php';
 		<script src="assets/js/index.js"></script>
 	</body>
 </html>
+<script type="text/javascript">
+			let cd=10;
+			let dbv=firebase
+				.database().ref('VisitorCount/');
+			dbv.once('value').then(async snap => {
+				cd= snap.val().count;
+				cd +=1;
+				console.log(cd);
+				dbv.set({count:cd});
+			});	
+</script>
 <?php require_once "footer.php"?>

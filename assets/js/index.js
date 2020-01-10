@@ -1,5 +1,3 @@
-// all added by yash
-
 const db = firebase
 	.database()
 	.ref("events")
@@ -58,12 +56,6 @@ function getdetails(id) {
 	});
 }
 
-// all added by yash
-
-// const dbs = firebase
-//   .database()
-//   .ref("events")
-//   .orderByChild("child_num");
 let cc = 1;
 let pastdate;
 
@@ -104,3 +96,5 @@ function comparedates(id) {
 		document.getElementById(id).classList.add("d-none");
 	} else document.getElementById(id).classList.remove("d-none");
 }
+
+/* Visitor Count */

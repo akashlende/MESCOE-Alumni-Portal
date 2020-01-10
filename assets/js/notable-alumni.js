@@ -6,11 +6,11 @@ const alumni = document.getElementById(`alumni`);
 db.on("value", snap => {
 	snap.forEach(doc => {
 		alumni.innerHTML += `<div class="row border mx-auto shadow-lg bg-white mt-5">
-      <div class="col-sm-4">
+      <div class="col-sm-4 d-flex justify-content-center ">
         <img
           src=""
-          class=" px-3 py-3 w-100 h-100"
-          style="object-fit: cover;"
+          class="py-3 w-100 h-100 d-flex"
+          style="object-fit: fill; max-width: 200px;"
           id="imgs${c}"
         />
       </div>
