@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<?php require_once 'meta-data.php'; ?>
+		<?php require_once 'meta-data.php';?>
 		<title>Profile</title>
 		<!-- Fonts -->
 		<link

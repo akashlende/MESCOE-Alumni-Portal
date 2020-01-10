@@ -63,10 +63,12 @@ export default function profileForm(dataURL) {
 							.getDownloadURL()
 							.then(url => {
 								alumni.personal.image = url;
+								localStorage.setItem("navPhoto", url);
 								database
 									.ref(`alumni/${hashedEmail}`)
 									.set(alumni)
 									.then(snap => {
+										localStorage.setItem("profileFilled", "1");
 										window.setTimeout(() => {
 											window.location.replace("./search.php");
 										}, 2000);

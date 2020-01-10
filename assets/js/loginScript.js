@@ -80,6 +80,7 @@ twitterButton.addEventListener("click", e => {
 });
 
 const loggedIn = parseInt(localStorage.getItem("loggedIn"));
+const profileFilled = parseInt(localStorage.getItem("profileFilled"));
 
 if (!loggedIn) {
 	firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -90,7 +91,8 @@ if (!loggedIn) {
 					localStorage.setItem("loggedIn", "1");
 					localStorage.setItem("loggedInUser", JSON.stringify(profile));
 				});
-				window.location.reload();
+				if (!profileFilled) window.location.replace("profile.php");
+				else window.location.reload();
 			}
 		} else {
 			console.log("Not logged in");
