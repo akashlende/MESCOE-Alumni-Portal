@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<?php require_once 'meta-data.php'; ?>
+		<?php require_once 'meta-data.php';?>
 		<title>MESCOE ALUMNI</title>
 		<style>
 			hr {
@@ -48,7 +48,6 @@ require "header.php";
 								data-slide-to="0"
 								class="active"
 							></li>
-							
 						</ol>
 						<div class="carousel-inner">
 							<div
@@ -119,7 +118,6 @@ require "header.php";
 							role="button"
 							data-slide="prev"
 						>
-							
 						</a>
 						<a
 							class="carousel-control-next"
@@ -127,7 +125,6 @@ require "header.php";
 							role="button"
 							data-slide="next"
 						>
-							
 						</a>
 
 						<div
@@ -480,7 +477,7 @@ require "header.php";
 			</div>
 			<?php require "login.php";?>
 		</main>
-		
+
 		<script src="assets/vendor/popper/popper.min.js"></script>
 		<script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
 		<script src="assets/vendor/headroom/headroom.min.js"></script>
@@ -524,6 +521,7 @@ require_once 'firebase_include.php';
 			} else {
 				document.querySelector("#login-button").classList.remove("d-none");
 			}
+			localStorage.setItem("profileFilled", "0");
 			let poly = document.querySelector("#alumni-page");
 			const isOutOfViewport = function(elem) {
 				// Get element's bounding
@@ -652,14 +650,13 @@ require_once 'firebase_include.php';
 	</body>
 </html>
 <script type="text/javascript">
-			let cd=10;
-			let dbv=firebase
-				.database().ref('VisitorCount/');
-			dbv.once('value').then(async snap => {
-				cd= snap.val().count;
-				cd +=1;
-				console.log(cd);
-				dbv.set({count:cd});
-			});	
+	let cd = 10;
+	let dbv = firebase.database().ref("VisitorCount/");
+	dbv.once("value").then(async snap => {
+		cd = snap.val().count;
+		cd += 1;
+		console.log(cd);
+		dbv.set({ count: cd });
+	});
 </script>
 <?php require_once "footer.php"?>

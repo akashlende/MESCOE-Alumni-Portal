@@ -2,7 +2,7 @@
 
 <html lang="en">
 	<head>
-		<?php require_once 'meta-data.php'; ?>
+		<?php require_once 'meta-data.php';?>
 		<title>Internship Opportunity</title>
 		<!-- Fonts -->
 		<link
@@ -38,7 +38,7 @@ require "header.php";
 					<div class="row">
 						<div class="col-md-6">
 							<form id="alumni-name" action="https://formspree.io/alumnimescoe@gmail.com" method="POST">
-								<input type="hidden" name="_next" value="https://mescoepune.org/alumni/index.php"/>
+								<input type="hidden" name="_next" value="https://dscmescoe.com/AlumniPortalDev/index.php"/>
 								<h4 class="mt-4">Personal Details</h4>
 								<div class="form-group h6">
 									<label class="col-form-label" for="alumni-name"
@@ -113,16 +113,16 @@ require "header.php";
 								</div>
 								<div class="form-group h6">
 									<label class="col-form-label" for="internship-designation"
-										>Designation</label
+										>Department</label
 									>
 									<input
 										required
-										name="internship-designation"
+										name="internship-department"
 										type="text"
 										class="form-control input-group "
-										id="internship-designation"
-										aria-describedby="internship-designation"
-										placeholder="Designation"
+										id="internship-department"
+										aria-describedby="internship-department"
+										placeholder="Department"
 									/>
 								</div>
 								<div class="form-group h6">
@@ -205,10 +205,10 @@ require "header.php";
 		<!-- Argon JS -->
 		<script src="assets/js/argon.js?v=1.1.0"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-		<?php 
-			require_once 'firebase_include.php';
-		?>
-		
+		<?php
+require_once 'firebase_include.php';
+?>
+
 		<script>
 			// Your web app's Firebase configuration
 			var firebaseConfig = {
@@ -228,4 +228,4 @@ require "header.php";
 		</script>
 	</body>
 </html>
-<?php require_once "footer.php" ?>
+<?php require_once "footer.php"?>

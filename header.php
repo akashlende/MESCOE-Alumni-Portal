@@ -1,7 +1,7 @@
 <script src="assets/vendor/jquery/jquery.min.js"></script>
 <script src="assets/js/preloader.js"></script>
 <script src="assets/js/preloader-modernizer.min.js"></script>
-<link rel="stylesheet" type="text/css" href="assets/css/preloader.css">
+<link rel="stylesheet" type="text/css" href="assets/css/preloader.css" />
 
 <div id="loader-wrapper">
 	<div id="loader"></div>
@@ -50,9 +50,7 @@
 					</div>
 				</div>
 				<ul class="navbar-nav ml-lg-auto">
-
-		            
-		            <li class="nav-item batch-item">
+					<li class="nav-item batch-item">
 						<div class="dropdown">
 							<button
 								class="btn btn-flat dropdown-toggle text-white item"
@@ -128,7 +126,9 @@
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 								<a class="dropdown-item" href="about.php">About Us</a>
 								<a class="dropdown-item" href="about.php#Contact">Contact</a>
-								<a class="dropdown-item" href="privacy-policy.php">Privacy Policy</a>
+								<a class="dropdown-item" href="privacy-policy.php"
+									>Privacy Policy</a
+								>
 							</div>
 						</div>
 					</li>
