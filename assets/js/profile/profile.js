@@ -90,8 +90,20 @@ function readURL(input) {
 	if (input.files && input.files[0]) {
 		var reader = new FileReader();
 		reader.onload = function(e) {
-			$(".upload-image").croppie("bind", {
-				url: e.target.result
+			$(".upload-image").croppie("destroy");
+			$(".upload-image").croppie({
+				url: e.target.result,
+				enableExif: true,
+				viewport: {
+					width: 300,
+					height: 300,
+					type: "circle"
+				},
+				enableOrientation: true,
+				boundary: {
+					width: 300,
+					height: 300
+				}
 			});
 		};
 		reader.readAsDataURL(input.files[0]);

@@ -521,7 +521,9 @@ require_once 'firebase_include.php';
 			} else {
 				document.querySelector("#login-button").classList.remove("d-none");
 			}
-			localStorage.setItem("profileFilled", "0");
+			if (!parseInt(localStorage.getItem("profileFilled"))) {
+				localStorage.setItem("profileFilled", "0")
+			}
 			let poly = document.querySelector("#alumni-page");
 			const isOutOfViewport = function(elem) {
 				// Get element's bounding

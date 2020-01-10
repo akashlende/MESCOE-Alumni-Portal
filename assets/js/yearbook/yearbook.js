@@ -11,7 +11,7 @@ let mech = [];
 
 function setComp() {
 	if (comp.length == 0) {
-		for (let i = 21; i >= 4; i--) {
+		for (let i = 22; i >= 4; i--) {
 			let classChip = document.createElement("class-chip");
 			classChip.setAttribute("year", 2000 + i);
 			classChip.setAttribute("id", `comp`);
@@ -25,7 +25,7 @@ function setComp() {
 
 function setEntc() {
 	if (entc.length == 0) {
-		for (let i = 21; i >= 4; i--) {
+		for (let i = 22; i >= 4; i--) {
 			let classChip = document.createElement("class-chip");
 			classChip.setAttribute("year", 2000 + i);
 			classChip.setAttribute("id", `entc`);
@@ -39,7 +39,7 @@ function setEntc() {
 
 function setMech() {
 	if (mech.length == 0) {
-		for (let i = 21; i >= 4; i--) {
+		for (let i = 22; i >= 4; i--) {
 			let classChip = document.createElement("class-chip");
 			classChip.setAttribute("year", 2000 + i);
 			classChip.setAttribute("id", `mech`);
