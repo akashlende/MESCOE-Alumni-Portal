@@ -3,10 +3,6 @@ const ln = parseInt(localStorage.getItem("loggedIn"));
 const loginItem = document.querySelector(".login-item");
 
 if (!ln) {
-	// document.querySelector(".login-item").classList.add("d-none");
-	// document.querySelector(".forms-item").classList.add("d-none");
-	// document.querySelector(".media-item").classList.add("d-none");
-	// document.querySelector(".batch-item").classList.add("d-none");
 	loginItem.classList.add("d-none");
 
 	if (window.location.pathname != "/AlumniPortalDev/") {
@@ -20,15 +16,12 @@ if (!ln) {
 		}
 	}
 } else {
-	document.querySelector(".login-item").classList.remove("d-none");
+	loginItem.classList.remove("d-none");
 	const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 	loginItem
 		.querySelector("#profile-image")
 		.setAttribute("src", loggedInUser.photoURL);
 	loginItem.querySelector("#user-name").innerHTML = loggedInUser.displayName;
-	document.querySelector(".forms-item").classList.remove("d-none");
-	document.querySelector(".media-item").classList.remove("d-none");
-	document.querySelector(".batch-item").classList.remove("d-none");
 }
 const logoutButton = document.querySelector("#logout");
 

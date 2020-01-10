@@ -54,7 +54,7 @@
 		            <a href="gallery.php">
 		            	<li class="nav-item">
 		                    <button
-		                    class="btn btn-flat text-white"
+		                    class="btn btn-flat text-white item"
 		                    type="button"
 		                    id="gallery"
 		                    >
@@ -62,12 +62,12 @@
 		                  </button>
 		                </li>
 		            </a>
-		            
+
 		            <a href="events.php">
 		            	<ul class="navbar-nav ml-lg-auto">
 		                  <li class="nav-item">
 		                      <button
-		                      class="btn btn-flat text-white"
+		                      class="btn btn-flat text-white item "
 		                      type="button"
 		                      id="events-and-updates"
 		                      >
