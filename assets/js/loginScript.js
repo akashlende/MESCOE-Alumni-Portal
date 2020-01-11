@@ -1,14 +1,14 @@
-const firebaseConfig = {
-	apiKey: "AIzaSyCBcqL0b8LqsURhdUOmmSBcntqXSI6uu7g",
-	authDomain: "mescoe-alumni.firebaseapp.com",
-	databaseURL: "https://mescoe-alumni.firebaseio.com",
-	projectId: "mescoe-alumni",
-	storageBucket: "mescoe-alumni.appspot.com",
-	messagingSenderId: "332958193506",
-	appId: "1:332958193506:web:b218c9102289cb36f0fe3b"
-};
+// const firebaseConfig = {
+// 	apiKey: "AIzaSyCBcqL0b8LqsURhdUOmmSBcntqXSI6uu7g",
+// 	authDomain: "mescoe-alumni.firebaseapp.com",
+// 	databaseURL: "https://mescoe-alumni.firebaseio.com",
+// 	projectId: "mescoe-alumni",
+// 	storageBucket: "mescoe-alumni.appspot.com",
+// 	messagingSenderId: "332958193506",
+// 	appId: "1:332958193506:web:b218c9102289cb36f0fe3b"
+// };
 
-firebase.initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
 
 const txtEmail = document.getElementById("txtEmail");
 const txtPassword = document.getElementById("txtPassword");
@@ -80,7 +80,6 @@ twitterButton.addEventListener("click", e => {
 });
 
 const loggedIn = parseInt(localStorage.getItem("loggedIn"));
-const profileFilled = parseInt(localStorage.getItem("profileFilled"));
 
 if (!loggedIn) {
 	firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -90,9 +89,28 @@ if (!loggedIn) {
 				user.providerData.forEach(function(profile) {
 					localStorage.setItem("loggedIn", "1");
 					localStorage.setItem("loggedInUser", JSON.stringify(profile));
+					firebase
+						.database()
+						.ref(`alumni/${md5(profile.email)}`)
+						.set({
+							profileFilled: parseInt(localStorage.getItem("profileFilled"))
+						})
+						.then(() => {
+							firebase
+								.database()
+								.ref(`alumni/${md5(profile.email)}`)
+								.once("value")
+								.then(snap => {
+									let user = snap.val();
+									console.log(user);
+									window.setTimeout(() => {
+										if (!user.profileFilled)
+											window.location.replace("profile.php");
+										else window.location.reload();
+									}, 2000);
+								});
+						});
 				});
-				if (!profileFilled) window.location.replace("profile.php");
-				else window.location.reload();
 			}
 		} else {
 			console.log("Not logged in");

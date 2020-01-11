@@ -1,5 +1,8 @@
-import { database, storage } from "../firebase/database.js";
+// import { database, storage } from "../firebase/database.js";
 const form = document.querySelector("#profile-form");
+
+const database = firebase.database();
+const storage = firebase.storage().ref();
 
 export default function profileForm(dataURL) {
 	form.addEventListener("submit", e => {
@@ -32,6 +35,7 @@ export default function profileForm(dataURL) {
 		if ((degreeDept1 || degreeDept2) && year.length == 4) {
 			let alumni;
 			alumni = {
+				profileFilled: 1,
 				personal: {
 					fullName,
 					userEmail,
@@ -67,15 +71,11 @@ export default function profileForm(dataURL) {
 								database
 									.ref(`alumni/${hashedEmail}`)
 									.set(alumni)
-									.then(snap => {
-										localStorage.setItem("profileFilled", "1");
+									.then(() =>
 										window.setTimeout(() => {
-											window.location.replace("./search.php");
-										}, 2000);
-									})
-									.catch(e => {
-										console.error(e);
-									});
+											window.location.replace("index.php");
+										}, 2000)
+									);
 							})
 							.catch(e => {
 								console.error(e);

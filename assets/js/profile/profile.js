@@ -4,7 +4,12 @@ import degrees from "./degrees.js";
 import profileForm from "./form.js";
 
 const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
-document.getElementById("name").setAttribute("value", loggedInUser.displayName);
+document
+	.getElementById("name")
+	.setAttribute(
+		"value",
+		loggedInUser.displayName == null ? "" : loggedInUser.displayName
+	);
 if (loggedInUser.email != null)
 	document.getElementById("email").setAttribute("readonly", "readonly");
 document

@@ -1,5 +1,6 @@
 import AlumniCard from "../components/alumni-card.js";
-import { database } from "../firebase/database.js";
+
+const database = firebase.database();
 
 customElements.define("alumni-card", AlumniCard);
 document.addEventListener("load", fetchUsers());

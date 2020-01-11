@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<?php require_once 'meta-data.php'; ?>
+		<?php require_once 'meta-data.php';?>
 		<link
 			rel="stylesheet"
 			type="text/css"
@@ -129,24 +129,13 @@
 			</div>
 		</div>
 		<!-- firebase -->
-		<?php 
-			require_once 'firebase_include.php';
-		?>
-		
+		<?php
+require_once 'firebase_include.php';
+?>
+
 		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 		<script>
-			// Your web app's Firebase configuration
-			var firebaseConfig = {
-				apiKey: "AIzaSyCBcqL0b8LqsURhdUOmmSBcntqXSI6uu7g",
-				authDomain: "mescoe-alumni.firebaseapp.com",
-				databaseURL: "https://mescoe-alumni.firebaseio.com",
-				projectId: "mescoe-alumni",
-				storageBucket: "mescoe-alumni.appspot.com",
-				messagingSenderId: "332958193506",
-				appId: "1:332958193506:web:b218c9102289cb36f0fe3b"
-			};
-			// Initialize Firebase
-			firebase.initializeApp(firebaseConfig);
+
 			const db = firebase.database().ref("events");
 		</script>
 		<!-- JS -->
@@ -174,4 +163,4 @@
 		<div style="height: 150px;"></div>
 	</body>
 </html>
-<?php require_once "footer.php" ?>
+<?php require_once "footer.php"?>

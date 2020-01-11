@@ -167,6 +167,8 @@
 <?php
 require_once 'firebase_include.php';
 ?>
+		<script src="assets/js/md5/md5.min.js"></script>
+
 <script src="assets/js/loginCheck.js"></script>
 <script>
 	$(".navbar-toggler").on("click", () => {
