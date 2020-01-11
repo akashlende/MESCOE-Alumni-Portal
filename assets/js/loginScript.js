@@ -93,6 +93,7 @@ if (!loggedIn) {
 								.then(snap => {
 									let user = snap.val();
 									console.log(user);
+									localStorage.setItem('firebase', '0');
 									window.setTimeout(() => {
 										if (!user.profileFilled)
 											window.location.replace("profile.php");

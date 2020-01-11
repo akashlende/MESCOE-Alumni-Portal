@@ -8,6 +8,11 @@ const firebaseConfig = {
 	appId: "1:332958193506:web:b218c9102289cb36f0fe3b"
 };
 
+if (!parseInt(localStorage.getItem('firebase'))) {
+	firebase.initializeApp(firebaseConfig)
+	localStorage.setItem('firebase', '1')
+}
+
 firebase.initializeApp(firebaseConfig);
 
 const ln = parseInt(localStorage.getItem("loggedIn"));
