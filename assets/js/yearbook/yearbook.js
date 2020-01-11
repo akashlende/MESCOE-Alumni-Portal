@@ -1,9 +1,10 @@
 import ClassChip from "../components/class-chip.js";
 import AlumniCard from "../components/alumni-card.js";
-import { database } from "../firebase/database.js";
 
 customElements.define("class-chip", ClassChip);
 customElements.define("alumni-card", AlumniCard);
+
+const database = firebase.database();
 
 let comp = [];
 let entc = [];

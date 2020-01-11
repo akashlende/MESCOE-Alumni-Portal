@@ -1,7 +1,4 @@
 var count = 99999;
-import firebaseConfig from "./firebase/firebase.config.js";
-
-firebase.initializeApp(firebaseConfig);
 
 $(document).ready(function() {
 	const db = firebase.database().ref("events");

@@ -1,5 +1,6 @@
 import PhotoCard from "./photo-card.js";
-import { database } from "./firebase/database.js";
+
+const database = firebase.database();
 
 function findGetParameter(parameterName) {
 	var result = null,

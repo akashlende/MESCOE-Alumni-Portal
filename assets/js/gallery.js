@@ -1,5 +1,6 @@
 import EventCard from "./event-card.js";
-import { database } from "./firebase/database.js";
+const database = firebase.database();
+
 
 customElements.define("event-card", EventCard);
 document.addEventListener("load", fetchCover());

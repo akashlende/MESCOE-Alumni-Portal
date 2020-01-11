@@ -1,4 +1,4 @@
-firebase.initializeApp(firebaseConfig);
+
 const db = firebase.database().ref("achievements");
 
 let c=0;
