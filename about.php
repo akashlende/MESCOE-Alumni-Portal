@@ -50,7 +50,7 @@
 						<h3>Modern Education Society's College of Engineering</h3>
 					<p style="line-height: 1.8em" class="">
 						Modern Education Society was established in 1932, with motto "FOR THE SPREAD OF LIGHT".
-                        The Modern Education Society's College of Engineering, Pune was established in 1999 and conducts the following courses leading to Bachelor's Degree in Engineering & Master Degree in Engineering. <br><br>
+                        The Modern Education Society's College of Engineering, Pune was established in 1999 and conducts the following courses leading to Bachelor's Degree in Engineering & Master Degree in Engineering. <br>MES College of Engineering is accredited by NBA and NAAC with 'A' grade <br><br>
                         <b>Vision :</b> To Groom - Motivated, Environment friendly, Self-esteemed, Creative and Oriented Engineers. <br><br>
 						<b>Mission :</b> To Develop Industry Oriented Manpower to accept the challenges of Globalization by,
 						<ul class="">
@@ -77,7 +77,7 @@
 			<div class="col-sm-4 box shadow bg-white rounded text-default">
 				<h1 class="text-left p-1 mt-5 mx-auto">Contact Info</h1>
 				<p class="p-2 my-auto mx-auto">
-					19, Late Prin.V.K.Joag Path, Wadia College Campus,Off, Bund Garden Rd,
+					Room 218, MES College of Engineering, Wadia College Campus, Bund Garden Rd,
 					Pune, Maharashtra 411001
 				</p>
 				<p class="p-2 my-auto mx-auto">

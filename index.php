@@ -468,7 +468,7 @@ require "header.php";
 						<div class="col-lg-4 col-xs-12 location">
 							<h4 class="mt-lg-0 mt-sm-4" style="color: #f5f5f5;">Address</h4>
 							<p class="text-white">
-								Late Prin. V.K. Joag Path, Wadia College Campus, Bund Garden Rd,
+								Room - 218, MES College of Engineering, Wadia College Campus, Bund Garden Rd,
 								Pune, Maharashtra 411001
 							</p>
 						</div>

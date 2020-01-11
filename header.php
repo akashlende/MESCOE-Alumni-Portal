@@ -126,6 +126,7 @@
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 								<a class="dropdown-item" href="about.php">About Us</a>
 								<a class="dropdown-item" href="about.php#Contact">Contact</a>
+								<a class="dropdown-item" href="members.php">Alumni Association Members</a>
 								<a class="dropdown-item" href="privacy-policy.php"
 									>Privacy Policy</a
 								>
