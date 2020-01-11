@@ -13,8 +13,6 @@ if (!parseInt(localStorage.getItem('firebase'))) {
 	localStorage.setItem('firebase', '1')
 }
 
-firebase.initializeApp(firebaseConfig);
-
 const ln = parseInt(localStorage.getItem("loggedIn"));
 const user = JSON.parse(localStorage.getItem("loggedInUser"));
 checkLogin();
