@@ -60,6 +60,9 @@
 						  <li>  Involving alumni.</li>
 						</ul>
 					</p>
+					<center><img src="assets/img/Alumni_Association_Certificate.jpeg" width="250px" alt="Alumni Association of MESCOE Certificate">
+						<p class="h5">Alumni Association of MESCOE</p>
+					</center>
 				</div>
 			</div>
 		</div>
