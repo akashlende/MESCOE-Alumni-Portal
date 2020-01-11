@@ -92,9 +92,10 @@ function comparedates(id) {
 	let s = pastdate.split("/").map(Number);
 	let cdate = new Date();
 	let udate = new Date(s[2], s[1] - 1, s[0]);
-	if (udate <= cdate) {
+	if (udate < cdate) {
 		document.getElementById(id).classList.add("d-none");
-	} else document.getElementById(id).classList.remove("d-none");
+	} else if(udate >= cdate)
+		document.getElementById(id).classList.remove("d-none");
 }
 
 /* Visitor Count */
