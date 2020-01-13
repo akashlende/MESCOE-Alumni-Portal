@@ -1,5 +1,3 @@
-
-
 const txtEmail = document.getElementById("txtEmail");
 const txtPassword = document.getElementById("txtPassword");
 const loginButton = document.getElementById("login-in-button");
@@ -82,24 +80,16 @@ if (!loggedIn) {
 					firebase
 						.database()
 						.ref(`alumni/${md5(profile.email)}`)
-						.set({
-							profileFilled: parseInt(localStorage.getItem("profileFilled"))
-						})
-						.then(() => {
-							firebase
-								.database()
-								.ref(`alumni/${md5(profile.email)}`)
-								.once("value")
-								.then(snap => {
-									let user = snap.val();
-									console.log(user);
-									localStorage.setItem('firebase', '0');
-									window.setTimeout(() => {
-										if (!user.profileFilled)
-											window.location.replace("profile.php");
-										else window.location.reload();
-									}, 2000);
-								});
+						.once("value")
+						.then(snap => {
+							let user = snap.val();
+							localStorage.setItem("navPhoto", user.personal.image);
+							localStorage.setItem(
+								"profileFilled",
+								!user.personal.userEmail ? "0" : "1"
+							);
+							if (!user.personal.email) window.location.replace("profile.php");
+							else window.location.replace("index.php");
 						});
 				});
 			}

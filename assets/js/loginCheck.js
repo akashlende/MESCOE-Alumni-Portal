@@ -8,30 +8,20 @@ const firebaseConfig = {
 	appId: "1:332958193506:web:b218c9102289cb36f0fe3b"
 };
 
-if (!parseInt(localStorage.getItem('firebase'))) {
-	firebase.initializeApp(firebaseConfig)
-	localStorage.setItem('firebase', '1')
+if (!parseInt(localStorage.getItem("firebase"))) {
+	firebase.initializeApp(firebaseConfig);
+	localStorage.setItem("firebase", "1");
 }
 
 const ln = parseInt(localStorage.getItem("loggedIn"));
 const user = JSON.parse(localStorage.getItem("loggedInUser"));
 checkLogin();
-firebase
-	.database()
-	.ref(`alumni/${md5(user.email)}`)
-	.once("value")
-	.then(snap => {
-		localStorage.setItem("profileFilled", snap.val().profileFilled.toString());
-		checkLogin();
-	});
 // console.log(window.pr);
 function checkLogin() {
 	const loginItem = document.querySelector(".login-item");
 	const pr = parseInt(localStorage.getItem("profileFilled"));
-	console.log(pr);
 	if (!ln) {
 		loginItem.classList.add("d-none");
-
 		if (window.location.pathname != "/AlumniPortalDev/") {
 			if (
 				window.location.pathname != "/AlumniPortalDev/index.php" &&

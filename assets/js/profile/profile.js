@@ -122,7 +122,7 @@ $(".upload-image").on("update.croppie", async (e, cropData) => {
 		quality: 0.8,
 		circle: false
 	});
-	console.log(dataURL);
+
 	profileForm(dataURL);
 });
 
