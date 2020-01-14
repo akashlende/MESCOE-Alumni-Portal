@@ -37,8 +37,8 @@ require "header.php";
 					</div>
 					<div class="row">
 						<div class="col-md-6">
-							<form id="alumni-name" action="https://formspree.io/alumnimescoe@gmail.com" method="POST">
-								<input type="hidden" name="_next" value="https://dscmescoe.com/AlumniPortalDev/index.php"/>
+							<form id="alumni-name" action="https://formspree.io/skwagh@mescoepune.org" method="POST">
+								<input type="hidden" name="_next" value="http://mescoepune.org/alumni/index.php"/>
 								<h4 class="mt-4">Personal Details</h4>
 								<div class="form-group h6">
 									<label class="col-form-label" for="alumni-name"
