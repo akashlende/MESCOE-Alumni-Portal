@@ -130,9 +130,7 @@ if (!loggedIn) {
 								};
 								firebase.database()
 									.ref(`alumni/${md5(profile.email)}`)
-									.set(alumni)
-								setTimeout(()=>"Hola!",5000);
-								
+									.set(alumni)								
 							}
 							firebase.database().ref(`alumni/${md5(profile.email)}`)
 								.once("value")
