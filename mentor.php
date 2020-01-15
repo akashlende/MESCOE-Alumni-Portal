@@ -37,7 +37,7 @@ require "header.php";
 					</div>
 					<div class="row">
 						<div class="col-md-6">
-							<form id="alumni-name" action="https://formspree.io/skwagh@mescoepune.org" method="POST">
+							<form id="alumni" action="https://formspree.io/skwagh@mescoepune.org" method="POST">
 								<input type="hidden" name="_next" value="http://mescoepune.org/alumni/index.php"/>
 								<div class="form-group h6">
 									<label class="col-form-label" for="alumni-name"
@@ -134,8 +134,7 @@ require "header.php";
 require_once 'firebase_include.php';
 ?>
 
-		<script>
-		</script>
+		<script src="assets/js/get-name-email.js"></script>
 		<script>
 			document.querySelector("nav").classList.add("bg-default");
 		</script>

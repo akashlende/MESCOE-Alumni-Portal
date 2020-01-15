@@ -81,15 +81,71 @@ if (!loggedIn) {
 						.database()
 						.ref(`alumni/${md5(profile.email)}`)
 						.once("value")
-						.then(snap => {
-							let user = snap.val();
-							localStorage.setItem("navPhoto", user.personal.image);
-							localStorage.setItem(
-								"profileFilled",
-								!user.personal.userEmail ? "0" : "1"
-							);
-							if (!user.personal.email) window.location.replace("profile.php");
-							else window.location.replace("index.php");
+						.then(async snap => {
+							if (!snap.val()) 
+							{
+								let degree1 = "";
+								let degree2 = "";
+								let department1 = "";
+								let department2 = "";
+								const fullName = "";
+								const userEmail = "";
+								const city = "";
+								const state = "";
+								const country = "";
+								const year = "";
+								const bio = "";
+								const details = "";
+								const twitter = "";
+								const facebook = "";
+								const linkedin = "";
+								const instagram = "";
+								const github = "";
+								let degreeDept1 = "";
+								let degreeDept2 = "";
+
+								let alumni;
+								alumni = {
+									personal: {
+										fullName,
+										userEmail,
+										city,
+										state,
+										country,
+										bio,
+										details,
+										year
+									},
+									academics: {
+										degrees: [degree1, degree2],
+										departments: [department1, department2]
+									},
+									socials: {
+										twitter,
+										facebook,
+										instagram,
+										linkedin,
+										github
+									}
+								};
+								firebase.database()
+									.ref(`alumni/${md5(profile.email)}`)
+									.set(alumni)
+								setTimeout(()=>"Hola!",5000);
+								
+							}
+							firebase.database().ref(`alumni/${md5(profile.email)}`)
+								.once("value")
+								.then(async snap=>{
+									user=snap.val();
+									localStorage.setItem("navPhoto", user.personal.image);
+									localStorage.setItem(
+										"profileFilled",
+										(user.personal.userEmail=="") ? "0" : "1"
+									);
+									if (!user.personal.userEmail) window.location.replace("profile.php");
+									else window.location.replace("index.php");		
+								});						
 						});
 				});
 			}

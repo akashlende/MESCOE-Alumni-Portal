@@ -17,7 +17,7 @@ const ln = parseInt(localStorage.getItem("loggedIn"));
 const user = JSON.parse(localStorage.getItem("loggedInUser"));
 checkLogin();
 // console.log(window.pr);
-function checkLogin() {
+async function checkLogin() {
 	const loginItem = document.querySelector(".login-item");
 	const pr = parseInt(localStorage.getItem("profileFilled"));
 	if (!ln) {

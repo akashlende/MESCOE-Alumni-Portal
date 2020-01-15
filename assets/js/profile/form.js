@@ -68,6 +68,7 @@ export default function profileForm(dataURL) {
 							.then(url => {
 								alumni.personal.image = url;
 								localStorage.setItem("navPhoto", url);
+								localStorage.setItem("profileFilled", "1");
 								database
 									.ref(`alumni/${hashedEmail}`)
 									.set(alumni)
