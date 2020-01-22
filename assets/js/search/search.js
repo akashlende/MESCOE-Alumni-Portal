@@ -43,6 +43,8 @@ function removeUsers() {
 
 function showUsers(users) {
 	for (let i = 0; i < users.length; i++) {
+		if (users[i].personal.year==="") 
+			continue;
 		let container = document.createElement("div");
 		container.setAttribute("class", "col-md-6 col-lg-4 mt-5");
 		let alumniCard = document.createElement("alumni-card");
@@ -67,10 +69,8 @@ function showUsers(users) {
 		});
 		alumniCard.setAttribute("data-target", "#modal-default");
 		alumniCard.setAttribute("data-toggle", "modal");
-	}
-	for (let i = 0; i < users.length; i++) {
-		let card = document.getElementById(`alumni-${i + 1}`);
-		card.addEventListener("click", () => showUser(users, i));
+
+		alumniCard.addEventListener("click", () => showUser(users, i));
 	}
 }
 
