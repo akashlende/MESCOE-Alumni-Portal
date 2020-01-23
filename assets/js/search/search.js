@@ -43,7 +43,7 @@ function removeUsers() {
 
 function showUsers(users) {
 	for (let i = 0; i < users.length; i++) {
-		if (users[i].personal.year==="") 
+		if (users[i].personal.year==="" || users[i].personal.userEmail==="alumnimescoe@gmail.com") 
 			continue;
 		let container = document.createElement("div");
 		container.setAttribute("class", "col-md-6 col-lg-4 mt-5");
