@@ -1,0 +1,38 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add exceljs
+
+PATH: 
+  C:\Python38\Scripts\;C:\Python38\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;D:\program\Oracle\home\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;"C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk\bin;";C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-12.0.1\bin;D:\program files\mingw64\bin;C:\wamp64\bin\php\php5.6.40;D:\ProgramFiles\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Akash\Downloads\latexindent\latexindent\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Akash\AppData\Local\Programs\Python\Python38-32\Lib\site-packages;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.3.0\;D:\ProgramFiles\cmake\bin;C:\Program Files\CMake\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\Akash\.windows-build-tools\python27\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Akash\AppData\Local\Microsoft\WindowsApps;C:\Users\Akash\Downloads\flutter_windows_v1.12.13+hotfix.5-stable\flutter\bin;D:\ProgramFiles\Git\bin;D:\ProgramFiles\Sublime Merge;C:\Users\Akash\.dotnet\tools;C:\Users\Akash\AppData\Local\Yarn\bin;C:\src\flutter\bin;C:\Users\Akash\AppData\Local\Microsoft\WindowsApps;C:\Program Files\MongoDB\Server\4.2\bin\;C:\Users\Akash\AppData\Local\Programs\Python\Python38-32\Lib\site-packages;D:\ProgramFiles\Anaconda\Library\bin;D:\ProgramFiles\Anaconda\Scripts;D:\ProgramFiles\Anaconda\condabin;D:\ProgramFiles\cmake\bin;C:\Users\Akash\Downloads\ffmpeg-20200619-2f59946-win64-static\ffmpeg-20200619-2f59946-win64-static\bin;C:\Users\Akash\Downloads\apache-maven-3.6.3\bin;D:\ProgramFiles\Microsoft VS Code\bin;D:\ProgramFiles\heroku\bin;D:\ProgramFiles\scrcpy-win64-v1.14;C:\Users\Akash\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\heroku\bin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  12.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: write EPROTO 5512:error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:1544:SSL alert number 40
+  
+      at WriteWrap.onWriteComplete [as oncomplete] (internal/stream_base_commons.js:92:16)
+
+npm manifest: 
+  {
+    "name": "json-to-excel",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Akash Lende",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
